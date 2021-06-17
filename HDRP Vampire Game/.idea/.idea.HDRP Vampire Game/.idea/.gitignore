@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.HDRP Vampire Game.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\Alessia\Desktop\Thesis Project\Thesis\HDRP Vampire Game\.idea\.idea.HDRP Vampire Game\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
