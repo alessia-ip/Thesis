@@ -18,7 +18,6 @@ public class ZoomExamination : MonoBehaviour
             if (Input.GetKey(KeyCode.Q) &&
                 zoomableObj.transform.localScale.x < maxSize)
             {
-                Debug.Log(zoomableObj.transform.localScale);
                 var maxVect = new Vector3(maxSize, maxSize, maxSize);
                 zoomableObj.transform.localScale = Vector3.MoveTowards(
                     zoomableObj.transform.localScale,
