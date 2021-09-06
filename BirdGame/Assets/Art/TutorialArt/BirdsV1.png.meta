@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 3020841cc5cc9184cb64ff3ddb20dc00
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5535759165160538337
+    second: BirdsV1_0
+  - first:
+      213: -908552506545482026
+    second: BirdsV1_1
+  - first:
+      213: -2811619643152697905
+    second: BirdsV1_2
+  - first:
+      213: -7302421657217422479
+    second: BirdsV1_3
+  - first:
+      213: -6799322913774716234
+    second: BirdsV1_4
+  - first:
+      213: -5397459845177700609
+    second: BirdsV1_5
+  - first:
+      213: -669835363940961982
+    second: BirdsV1_6
+  - first:
+      213: -4689291367957046177
+    second: BirdsV1_7
+  - first:
+      213: 8046351917102043431
+    second: BirdsV1_8
+  - first:
+      213: -101839030896698907
+    second: BirdsV1_9
+  - first:
+      213: -5261377917877654399
+    second: BirdsV1_10
+  - first:
+      213: -9067981225220980254
+    second: BirdsV1_11
+  - first:
+      213: -3311798442502649337
+    second: BirdsV1_12
+  - first:
+      213: 3506112951866806744
+    second: BirdsV1_13
+  - first:
+      213: -4868484220599139228
+    second: BirdsV1_14
+  - first:
+      213: 7338344643425907371
+    second: BirdsV1_15
+  - first:
+      213: 310251586973557302
+    second: BirdsV1_16
+  - first:
+      213: 7909969108308985281
+    second: BirdsV1_17
+  - first:
+      213: 4987513360529549897
+    second: BirdsV1_18
+  - first:
+      213: 921069213772775316
+    second: BirdsV1_19
+  - first:
+      213: 5710055925423353610
+    second: BirdsV1_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BirdsV1_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 664
+        width: 136
+        height: 335
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0c18981a7f2dc40800000000000000
+      internalID: 5535759165160538337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 664
+        width: 136
+        height: 335
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6d09b1f4c2463f0800000000000000
+      internalID: -908552506545482026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_2
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 864
+        width: 317
+        height: 136
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc57f56c4de1bf8d0800000000000000
+      internalID: -2811619643152697905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_3
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 814
+        width: 226
+        height: 185
+      alignment: 9
+      pivot: {x: 0.34247446, y: 0.7419193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17baf61513698aa90800000000000000
+      internalID: -7302421657217422479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_4
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 982
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bab84395d3f3a1a0800000000000000
+      internalID: -6799322913774716234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_5
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 942
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe8fb62ede5815b0800000000000000
+      internalID: -5397459845177700609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_6
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 904
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241fd42194444b6f0800000000000000
+      internalID: -669835363940961982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_7
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 868
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c5d94885a4ceeb0800000000000000
+      internalID: -4689291367957046177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_8
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 704
+        width: 317
+        height: 136
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72196acef626aaf60800000000000000
+      internalID: 8046351917102043431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_9
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 604
+        width: 226
+        height: 185
+      alignment: 9
+      pivot: {x: 0.6575247, y: 0.75291586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9d123e0f1369ef0800000000000000
+      internalID: -101839030896698907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 367
+        width: 86
+        height: 271
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c61dfd8a4dbf6b0800000000000000
+      internalID: -5261377917877654399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 506
+        width: 139
+        height: 132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1cac0be1f082280800000000000000
+      internalID: -9067981225220980254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_12
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 470
+        width: 164
+        height: 209
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a00fafcd02a02d0800000000000000
+      internalID: -3311798442502649337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_13
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 408
+        width: 87
+        height: 271
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1da6e472738a030800000000000000
+      internalID: 3506112951866806744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_14
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 447
+        width: 140
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464089c456baf6cb0800000000000000
+      internalID: -4868484220599139228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_15
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 473
+        width: 42
+        height: 106
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2bacea29907d560800000000000000
+      internalID: 7338344643425907371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_16
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 473
+        width: 42
+        height: 106
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6326f80bc2c3e4400800000000000000
+      internalID: 310251586973557302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 405
+        width: 42
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c50215cefad5cd60800000000000000
+      internalID: 7909969108308985281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_18
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 437
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ae0e6f9f4373540800000000000000
+      internalID: 4987513360529549897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_19
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 437
+        width: 45
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f7974e19b48cc00800000000000000
+      internalID: 921069213772775316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BirdsV1_20
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 413
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f297a6c913e3f40800000000000000
+      internalID: 5710055925423353610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

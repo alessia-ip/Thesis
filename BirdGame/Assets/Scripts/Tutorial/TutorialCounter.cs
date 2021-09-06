@@ -5,9 +5,12 @@ using UnityEngine.UI;
 
 public class TutorialCounter : MonoBehaviour
 {
-    private float time;
+    public float time;
     public Text counter;
-    const float threeBeats = 2.363f;
+    public float threeBeats = 0.772f * 3;
+    private float elapsedTime = 0;
+    private float songTime = 304.728f;
+    
     // Update is called once per frame
     void FixedUpdate()
     {
