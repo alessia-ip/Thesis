@@ -10,14 +10,15 @@ public class GridManager : MonoBehaviour
     public GameObject tilePrefab;
     public GameObject level;
     public GameObject startPos;
-    
-    public GameObject [][] tileArray;
+
+    public GameObject [,] tileArray;
 
     // Start is called before the first frame update
     void Start()
     {
         var startX = startPos.transform.position.x;
         var startY = startPos.transform.position.y;
+        tileArray = new GameObject[width, height];
         
         for (int x = 0; x < width; x++)
         {
@@ -28,6 +29,9 @@ public class GridManager : MonoBehaviour
                      startY - y - 0.1f * y);
                 var newTile = Instantiate(tilePrefab);
                 newTile.transform.position = tilePosition;
+                newTile.transform.parent = level.transform;
+                newTile.name = "Tile:" + x + "," + y;
+                tileArray[x, y] = newTile;
             }
         }
     }
