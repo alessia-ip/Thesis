@@ -20,25 +20,32 @@ public class MovesList : MonoBehaviour
     
     public void MoveOne(int direction)
     {
-        switch (direction)
+        var cost = 1;
+        if (movesPlanned._moveCost + cost <= movesPlanned.energyMeter.maxEnergy)
         {
-            case 0:
-                //North
-                //Adding this action to the list of actions - referencing the moves in the other list
-                movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneNorth);
-                return;
-            case 1:
-                //East
-                movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneEast);
-                return;
-            case 2:
-                //South
-                movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneSouth);
-                return;
-            case 3:
-                //West
-                movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneWest);
-                return;
+            movesPlanned.MoveCost.Add(1);
+            switch (direction)
+            {
+                case 0:
+                    //North
+                    Debug.Log("Go North One");
+                    //Adding this action to the list of actions - referencing the moves in the other list
+                    movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneNorth);
+                    return;
+                case 1:
+                    //East
+                    Debug.Log("Go East One");
+                    movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneEast);
+                    return;
+                case 2:
+                    //South
+                    movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneSouth);
+                    return;
+                case 3:
+                    //West
+                    movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneWest);
+                    return;
+            }
         }
     }
 

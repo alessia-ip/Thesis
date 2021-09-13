@@ -12,17 +12,22 @@ public class MovesPlanned : MonoBehaviour
     public List<int> MoveCost = new List<int>();
     public List<Action> PlannedMoves = new List<Action>();
     public EnergyMeter energyMeter;
+    public int _moveCost;
 
+    public int prevLength = 0;
     
     private void Update()
     {
-        var moveCost = 0;
-        for (int i = 0; i < MoveCost.Count; i++)
+        if (MoveCost.Count != prevLength)
         {
-            moveCost = moveCost + MoveCost[i];
+            _moveCost = 0;
+            for (int i = 0; i < MoveCost.Count; i++)
+            {
+                _moveCost = _moveCost + MoveCost[i];
+            }
+            energyMeter.CurrentEnergy = energyMeter.maxEnergy - _moveCost;
+            prevLength = MoveCost.Count;
         }
-
-        energyMeter.currentEnergy = energyMeter.maxEnergy - moveCost;
     }
     
     //this is the correct syntax to invoke

@@ -28,7 +28,7 @@ public class SurroundingTiles : MonoBehaviour
 
     public GameObject playerChar;
 
-    void getOneAway()
+    public void getOneAway()
     {
         Vector2 currentPlayerPos = playerChar.GetComponent<positionTracker>().GridPosition;
         oneAwayTiles.Clear();
@@ -40,19 +40,19 @@ public class SurroundingTiles : MonoBehaviour
         oneAwayTiles.Add(east);
         oneAwayTiles.Add(south);
         oneAwayTiles.Add(west);
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 4; i++) //this is to check if we fell off the grid anywhere
         {
             if (oneAwayTiles[i].x < 0 || 
                 oneAwayTiles[i].y < 0 || 
                 oneAwayTiles[i].x > _gridManager.width - 1 ||
                 oneAwayTiles[i].y > _gridManager.height - 1)
             {
-                oneAwayTiles[i] = currentPlayerPos;
+                oneAwayTiles[i] = new Vector2(-100, -100);
             }
         }
     } 
     
-    void getTwoAway()
+    public void getTwoAway()
     {
         Vector2 currentPlayerPos = playerChar.GetComponent<positionTracker>().GridPosition;
         twoAwayTiles.Clear();
