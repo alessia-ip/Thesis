@@ -9,15 +9,19 @@ public class GridManager : MonoBehaviour
 
     public GameObject tilePrefab;
     public GameObject level;
-    public GameObject startPos;
+    public GameObject tileStartPos;
 
+    public Vector2 playerStartpos;
+    public GameObject playerChar;
+    
     public GameObject [,] tileArray;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        var startX = startPos.transform.position.x;
-        var startY = startPos.transform.position.y;
+        var startX = tileStartPos.transform.position.x;
+        var startY = tileStartPos.transform.position.y;
         tileArray = new GameObject[width, height];
         
         for (int x = 0; x < width; x++)
@@ -32,6 +36,14 @@ public class GridManager : MonoBehaviour
                 newTile.transform.parent = level.transform;
                 newTile.name = "Tile:" + x + "," + y;
                 tileArray[x, y] = newTile;
+
+                var tileCheck = new Vector2(x, y);
+                if (tileCheck == playerStartpos)
+                {
+                    playerChar.transform.position = newTile.transform.position;
+                    playerChar.GetComponent<positionTracker>().GridPosition = tileCheck; 
+                }
+                
             }
         }
     }
