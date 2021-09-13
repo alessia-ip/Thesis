@@ -9,13 +9,26 @@ public class MovesPlanned : MonoBehaviour
 
     public MovesList movesList;
     public ExecutableMovesList executableMovesList;
-    public List<Expression> PlannedMoves = new List<Expression>();
+    public List<int> MoveCost = new List<int>();
+    public List<Action> PlannedMoves = new List<Action>();
+    public EnergyMeter energyMeter;
+
     
-    private void Start()
+    private void Update()
     {
-        //this is the correct syntax to invoke
-        //move list will be planned from MOVE LIST
-        //move list will be executed from EXECUTABLE MOVES LIST
-        //movesList.Invoke(nameof(movesList.jump), 1f);
+        var moveCost = 0;
+        for (int i = 0; i < MoveCost.Count; i++)
+        {
+            moveCost = moveCost + MoveCost[i];
+        }
+
+        energyMeter.currentEnergy = energyMeter.maxEnergy - moveCost;
     }
+    
+    //this is the correct syntax to invoke
+    //move list will be planned from MOVE LIST
+    //move list will be executed from EXECUTABLE MOVES LIST
+    //movesList.Invoke(nameof(movesList.jump), 1f);
+
+
 }

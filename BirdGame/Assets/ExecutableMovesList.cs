@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class ExecutableMovesList : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   public void exeMoveOneNorth()
+   {
+      
+   }
+   public void exeMoveOneEast()
+   {
+      
+   }
+   public void exeMoveOneSouth()
+   {
+      
+   }
+   public void exeMoveOneWest()
+   {
+      
+   }
+   
 }
