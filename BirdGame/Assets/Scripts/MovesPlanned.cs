@@ -32,7 +32,7 @@ public class MovesPlanned : MonoBehaviour
             }
             energyMeter.CurrentEnergy = energyMeter.maxEnergy - _moveCost;
             prevLength = MoveCost.Count;
-            Debug.Log(PlannedMoves[PlannedMoves.Count-1].Method);
+            //Debug.Log(PlannedMoves[PlannedMoves.Count-1].Method);
         }
     }
     

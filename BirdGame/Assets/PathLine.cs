@@ -21,7 +21,7 @@ public class PathLine : MonoBehaviour
       }
       prevLength++;
       line.positionCount = prevLength;
-      lineRendPoints.Add(new Vector3(playerGhost.transform.position.x, playerGhost.transform.position.y, 0));
+      lineRendPoints.Add(new Vector3(playerGhost.transform.position.x, playerGhost.transform.position.y, -5));
       Debug.Log("new count:" + lineRendPoints.Count);
       for (int i = 0; i < prevLength; i++){
          Debug.Log(lineRendPoints[i]);
@@ -34,7 +34,7 @@ public class PathLine : MonoBehaviour
       lineRendPoints.Clear();
       prevLength = 1;
       line.positionCount = prevLength;
-      lineRendPoints.Add(new Vector3(player.transform.position.x, player.transform.position.y, 0));
+      lineRendPoints.Add(new Vector3(player.transform.position.x, player.transform.position.y, -5));
       line.SetPosition(0, lineRendPoints[0]);
    }
    
