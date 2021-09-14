@@ -44,7 +44,7 @@ public class SurroundingTiles : MonoBehaviour
         {
             if (oneAwayTiles[i].x < 0 || 
                 oneAwayTiles[i].y < 0 || 
-                oneAwayTiles[i].x > _gridManager.width - 1 ||
+                oneAwayTiles[i].x > _gridManager.width - 1||
                 oneAwayTiles[i].y > _gridManager.height - 1)
             {
                 oneAwayTiles[i] = new Vector2(-100, -100);

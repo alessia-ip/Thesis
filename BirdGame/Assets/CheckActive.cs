@@ -7,7 +7,7 @@ public class CheckActive : MonoBehaviour
     public SurroundingTiles surroundingTiles;
     public int dir;
 
-    void Awake()
+    void OnEnable()
     {
         if (surroundingTiles.oneAwayTiles[dir] == new Vector2(-100, -100))
         {
