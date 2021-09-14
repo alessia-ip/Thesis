@@ -13,9 +13,14 @@ public class MovesPlanned : MonoBehaviour
     public List<Action> PlannedMoves = new List<Action>();
     public EnergyMeter energyMeter;
     public int _moveCost;
-
     public int prevLength = 0;
-    
+
+    public PathLine pathLine;
+    public GameObject player;
+    public GameObject playerGhost;
+
+   
+
     private void Update()
     {
         if (MoveCost.Count != prevLength)
@@ -27,6 +32,7 @@ public class MovesPlanned : MonoBehaviour
             }
             energyMeter.CurrentEnergy = energyMeter.maxEnergy - _moveCost;
             prevLength = MoveCost.Count;
+            Debug.Log(PlannedMoves[PlannedMoves.Count-1].Method);
         }
     }
     

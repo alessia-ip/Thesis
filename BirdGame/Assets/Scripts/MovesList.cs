@@ -29,14 +29,12 @@ public class MovesList : MonoBehaviour
             {
                 case 0:
                     //North
-                    Debug.Log("Go North One");
                     //Adding this action to the list of actions - referencing the moves in the other list
                     movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneNorth);
                     ghostMove.oneAway(0);
                     return;
                 case 1:
                     //East
-                    Debug.Log("Go East One");
                     movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneEast);
                     ghostMove.oneAway(1);
                     return;
