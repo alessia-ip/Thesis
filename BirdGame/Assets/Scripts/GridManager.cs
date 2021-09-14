@@ -13,6 +13,7 @@ public class GridManager : MonoBehaviour
 
     public Vector2 playerStartpos;
     public GameObject playerChar;
+    public GameObject playerGhost;
     
     public GameObject [,] tileArray;
     
@@ -41,7 +42,9 @@ public class GridManager : MonoBehaviour
                 if (tileCheck == playerStartpos)
                 {
                     playerChar.transform.position = newTile.transform.position;
-                    playerChar.GetComponent<positionTracker>().GridPosition = tileCheck; 
+                    playerChar.GetComponent<positionTracker>().GridPosition = tileCheck;  
+                    playerGhost.transform.position = newTile.transform.position;
+                    playerGhost.GetComponent<positionTracker>().GridPosition = tileCheck; 
                 }
                 
             }

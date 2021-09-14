@@ -9,7 +9,8 @@ public class MovesList : MonoBehaviour
 
     public MovesPlanned movesPlanned;
     public ExecutableMovesList executableMovesList;
-
+    public GhostMove ghostMove;
+    
     public void undo()
     {
         movesPlanned.PlannedMoves.RemoveAt(movesPlanned.PlannedMoves.Count - 1);
@@ -31,25 +32,29 @@ public class MovesList : MonoBehaviour
                     Debug.Log("Go North One");
                     //Adding this action to the list of actions - referencing the moves in the other list
                     movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneNorth);
+                    ghostMove.oneAway(0);
                     return;
                 case 1:
                     //East
                     Debug.Log("Go East One");
                     movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneEast);
+                    ghostMove.oneAway(1);
                     return;
                 case 2:
                     //South
                     movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneSouth);
+                    ghostMove.oneAway(2);
                     return;
                 case 3:
                     //West
                     movesPlanned.PlannedMoves.Add(executableMovesList.exeMoveOneWest);
+                    ghostMove.oneAway(3);
                     return;
             }
         }
     }
 
-    public void MoveTwo(Vector2 direction)
+    public void MoveTwo(int direction)
     {
         
     }
