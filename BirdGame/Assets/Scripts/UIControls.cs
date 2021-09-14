@@ -9,6 +9,9 @@ public class UIControls : MonoBehaviour
     public MovesPlanned movesPlanned;
     public Button dance;
     public GameObject MoveSetOne;
+
+    public GameObject player;
+    public GameObject playerGhost;
     
     // Update is called once per frame
     void Update()
@@ -39,6 +42,13 @@ public class UIControls : MonoBehaviour
         }
     }
 
+    public void EndSelectPhase()
+    {
+        player.transform.position = playerGhost.transform.position;
+        player.GetComponent<positionTracker>().GridPosition = playerGhost.GetComponent<positionTracker>().GridPosition;
+        movesPlanned.PlannedMoves.Clear();
+        movesPlanned.MoveCost.Clear();
+    }
 
 
 }

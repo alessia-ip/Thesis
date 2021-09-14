@@ -493,6 +493,8 @@ MonoBehaviour:
   movesPlanned: {fileID: 147227943}
   dance: {fileID: 1784137275}
   MoveSetOne: {fileID: 802022051}
+  player: {fileID: 148867887}
+  playerGhost: {fileID: 1682026511}
 --- !u!114 &147227947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -579,7 +581,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -4057,7 +4059,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1784137276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 147227946}
+        m_TargetAssemblyTypeName: UIControls, Assembly-CSharp
+        m_MethodName: EndSelectPhase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1784137276
 MonoBehaviour:
   m_ObjectHideFlags: 0
