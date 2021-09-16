@@ -23,7 +23,7 @@ public class MovesPlanned : MonoBehaviour
 
     private void Update()
     {
-        if (MoveCost.Count != prevLength)
+        if (MoveCost.Count != prevLength && MoveCost.Count > 0)
         {
             _moveCost = 0;
             for (int i = 0; i < MoveCost.Count; i++)
@@ -32,7 +32,12 @@ public class MovesPlanned : MonoBehaviour
             }
             energyMeter.CurrentEnergy = energyMeter.maxEnergy - _moveCost;
             prevLength = MoveCost.Count;
-            //Debug.Log(PlannedMoves[PlannedMoves.Count-1].Method);
+            Debug.Log(PlannedMoves[PlannedMoves.Count-1].Method);
+        } 
+        else if (MoveCost.Count == 0)
+        {
+            _moveCost = 0;
+            energyMeter.CurrentEnergy = energyMeter.maxEnergy - _moveCost;
         }
     }
     

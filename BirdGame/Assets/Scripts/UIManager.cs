@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour
         {
             moveBackground.SetActive(true);
             var bgRect = moveBackground.GetComponent<RectTransform>();
-            Vector2 rectSize = new Vector2(30 * _movesPlanned.PlannedMoves.Count + 30, bgRect.rect.height); 
+            Vector2 rectSize = new Vector2(35 * _movesPlanned.PlannedMoves.Count + 40, bgRect.rect.height); 
             bgRect.sizeDelta = rectSize;
             //Debug.Log(rectSize);
             if (_movesPlanned.PlannedMoves.Count > prevSize)
@@ -40,19 +40,19 @@ public class UIManager : MonoBehaviour
                 var newArrow = Instantiate(arrowKey);
                 newArrow.transform.SetParent(bgRect.transform, false);
                 newArrow.GetComponent<RectTransform>().anchoredPosition = new Vector3(35 * prevSize, 0, 0);
-                Debug.Log(_movesPlanned.PlannedMoves[prevSize-1]);
-                switch (_movesPlanned.PlannedMoves[prevSize-1] + "")
+                Debug.Log(_movesPlanned.PlannedMoves[prevSize-1].Method +"");
+                switch (_movesPlanned.PlannedMoves[prevSize-1].Method + "")
                 {
-                    case "executableMovesList.exeMoveOneNorth":
+                    case "Void exeMoveOneNorth()":
                         return;
-                    case "executableMovesList.exeMoveOneEast":
-                        newArrow.GetComponent<RectTransform>().eulerAngles = new Vector3(0,0 -90);
+                    case "Void exeMoveOneEast()":
+                        newArrow.GetComponent<RectTransform>().eulerAngles = new Vector3(0,0, -90);
                         return;
-                    case "executableMovesList.exeMoveOneSouth":
-                        newArrow.GetComponent<RectTransform>().eulerAngles = new Vector3(0,0 -180);
+                    case "Void exeMoveOneSouth()":
+                        newArrow.GetComponent<RectTransform>().eulerAngles = new Vector3(0,0,-180);
                         return;
-                    case "executableMovesList.exeMoveOneWest":
-                        newArrow.GetComponent<RectTransform>().eulerAngles = new Vector3(0,0 -270);
+                    case "Void exeMoveOneWest()":
+                        newArrow.GetComponent<RectTransform>().eulerAngles = new Vector3(0,0, -270);
                         return;
                 }
             }
