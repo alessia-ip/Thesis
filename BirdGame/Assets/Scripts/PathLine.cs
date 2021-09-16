@@ -22,9 +22,8 @@ public class PathLine : MonoBehaviour
       prevLength++;
       line.positionCount = prevLength;
       lineRendPoints.Add(new Vector3(playerGhost.transform.position.x, playerGhost.transform.position.y, -5));
-      Debug.Log("new count:" + lineRendPoints.Count);
       for (int i = 0; i < prevLength; i++){
-         Debug.Log(lineRendPoints[i]);
+         //Debug.Log(lineRendPoints[i]);
          line.SetPosition(i, lineRendPoints[i]);
       }
    }

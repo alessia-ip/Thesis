@@ -10,6 +10,8 @@ public class UIControls : MonoBehaviour
     public Button dance;
     public GameObject MoveSetOne;
 
+    public Phase _turnPhase;
+    
     public GameObject player;
     public GameObject playerGhost;
     
@@ -44,6 +46,7 @@ public class UIControls : MonoBehaviour
 
     public void EndSelectPhase()
     {
+        //_turnPhase._dancePhase = Phase.DancePhase.Beats;
         player.transform.position = playerGhost.transform.position;
         player.GetComponent<positionTracker>().GridPosition = playerGhost.GetComponent<positionTracker>().GridPosition;
         movesPlanned.PlannedMoves.Clear();
