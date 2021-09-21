@@ -26,6 +26,8 @@ public class AxialGridManager : MonoBehaviour
 
     void makeGrid()
     {
+        var axialOffset = height;
+
         for (int y = -height; y <= height; y++)
         {
             for (int x = -width; x <= width; x++)
@@ -35,14 +37,14 @@ public class AxialGridManager : MonoBehaviour
                 if (y == 0 || Mathf.Abs(y % 2) == 0) //if the y coord is even
                 {
                     tilePosition = new Vector2(
-                        x * horizontalSpacing,
+                        x * horizontalSpacing + horizontalSpacing/2 * axialOffset,
                         y * verticalSpacing
                         );
                 }
                 else //if the y coord is odd - DONT CHANGE ME
                 {
                     tilePosition = new Vector2(
-                        x * horizontalSpacing + horizontalSpacing/2,
+                        x * horizontalSpacing + horizontalSpacing/2 * axialOffset,
                         y * verticalSpacing
                         );
                 }
@@ -50,6 +52,9 @@ public class AxialGridManager : MonoBehaviour
                 HexTile.transform.position = tilePosition;
                 HexTile.gameObject.name = "X:" + x + " | Y:" + y;
             }
+
+            Debug.Log(axialOffset);
+            axialOffset++;
         }
     }
 }

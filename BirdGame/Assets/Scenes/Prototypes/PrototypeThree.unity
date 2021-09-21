@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80018fd5f5260481482575a93510ea52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 10
+  width: 5
   height: 5
   tilePrefab: {fileID: 6416198608857249148, guid: 3b9a4f22a27ef44798576e198f987243, type: 3}
   level: {fileID: 1174446094}
