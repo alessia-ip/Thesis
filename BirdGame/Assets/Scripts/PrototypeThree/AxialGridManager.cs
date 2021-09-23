@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class AxialGridManager : MonoBehaviour
 {
+    [Header("Half Grid Size")]
     public int width;
     public int height;
     
+    [Header("Level Creator Objects")]
     public GameObject tilePrefab;
     public GameObject level;
 
+    [Header("Spacing Between Hexagonal Tiles")]
     public float horizontalSpacing;
     public float verticalSpacing;
     
     public GameObject [,] tileArray;
+
+    [Header("The Player")]
+    public Vector2 playerStartPosition;
+    public GameObject player;
     
     // Start is called before the first frame update
     void Start()
@@ -28,7 +35,6 @@ public class AxialGridManager : MonoBehaviour
     {
         var axialOffset = height;
         
-
         for (int y = -height; y <= height; y++)
         {
             var axialY = y + height;
@@ -55,14 +61,20 @@ public class AxialGridManager : MonoBehaviour
                 }
 
                 HexTile.transform.position = tilePosition;
-                //HexTile.gameObject.name = "X:" + x + " | Y:" + y;
                 HexTile.gameObject.name = "X:" + axialX + " | Y:" + axialY;
+                
+                if (playerStartPosition == new Vector2(axialX, axialY))
+                {
+                    player.transform.position = HexTile.transform.position;
+                    player.GetComponent<TilePosition>().axialCoordinates = new Vector2(axialX, axialY);
+                }
+                
+                HexTile.GetComponent<TilePosition>().axialCoordinates = new Vector2(axialX, axialY);
                 HexTile.gameObject.transform.parent = level.transform;
-                //Debug.Log(axialX + "," + axialY);
                 tileArray[axialX, axialY] = HexTile;
-            }
 
-            Debug.Log(axialOffset);
+            }
+            
             axialOffset++;
         }
     }
