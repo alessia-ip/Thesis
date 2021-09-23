@@ -62,6 +62,7 @@ public class AxialGridGetOneTileAway : MonoBehaviour
             if (oneAwayTileList[i] != null)
             {
                 oneAwayTileList[i].GetComponent<SpriteRenderer>().color = Color.white;
+                oneAwayTileList[i].GetComponent<ClickableTile>().clickable = false;
             }
         }
     }
@@ -91,6 +92,7 @@ public class AxialGridGetOneTileAway : MonoBehaviour
             if (oneAwayTileList[i] != null)
             {
                 oneAwayTileList[i].GetComponent<SpriteRenderer>().color = Color.green;
+                oneAwayTileList[i].GetComponent<ClickableTile>().clickable = true;
             }
         }
     }

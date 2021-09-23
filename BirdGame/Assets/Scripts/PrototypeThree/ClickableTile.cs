@@ -11,7 +11,7 @@ public class ClickableTile : MonoBehaviour
     {
         if (clickable == true)
         {
-            
+            Debug.Log(this.gameObject.name);
         }
     }
 }
