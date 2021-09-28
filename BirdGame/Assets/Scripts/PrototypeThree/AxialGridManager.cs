@@ -21,6 +21,7 @@ public class AxialGridManager : MonoBehaviour
     [Header("The Player")]
     public Vector2 playerStartPosition;
     public GameObject player;
+    public GameObject playerGhost;
     
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class AxialGridManager : MonoBehaviour
         var startY = 0;
         tileArray = new GameObject[width * 2 + 1, height * 2 + 1];
         makeGrid();
+
     }
 
     void makeGrid()
@@ -67,6 +69,9 @@ public class AxialGridManager : MonoBehaviour
                 {
                     player.transform.position = HexTile.transform.position;
                     player.GetComponent<TilePosition>().axialCoordinates = new Vector2(axialX, axialY);
+                    playerGhost.transform.position = player.transform.position;
+                    playerGhost.GetComponent<TilePosition>().axialCoordinates = player.GetComponent<TilePosition>().axialCoordinates;
+
                 }
                 
                 HexTile.GetComponent<TilePosition>().axialCoordinates = new Vector2(axialX, axialY);
