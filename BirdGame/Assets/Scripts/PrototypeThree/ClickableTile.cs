@@ -6,7 +6,7 @@ using UnityEngine;
 public class ClickableTile : MonoBehaviour
 {
     public bool clickable = false;
-
+    
     public MoveGhost _moveGhost;
 
     private void Start()
@@ -22,4 +22,23 @@ public class ClickableTile : MonoBehaviour
             _moveGhost.ClickedTile = this.gameObject;
         }
     }
+    
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log(other.name);
+        if (other.gameObject.tag == "Unwalkable")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Unwalkable")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    
 }

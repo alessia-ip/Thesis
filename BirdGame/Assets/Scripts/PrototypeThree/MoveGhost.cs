@@ -9,6 +9,7 @@ public class MoveGhost : MonoBehaviour
     public GameObject playerGhost;
 
     public PlayerPathRenderer _playerPathRenderer;
+    public SavePlayerMotion _savePlayerMotion;
     
     public GameObject ClickedTile
     {
@@ -20,6 +21,7 @@ public class MoveGhost : MonoBehaviour
         {
             clickedTile = value;
             MovePlayerGhost();
+            _savePlayerMotion.AddMove();
         }
     }
 

@@ -14,6 +14,9 @@ public class AxialGridGetOneTileAway : MonoBehaviour
     private Vector2[] directionalCoordinates = new Vector2[6];
 
     public GameObject[] oneAwayTileList = new GameObject[6];
+
+    public Color blank;
+    public Color highlighted;
     
     private void Start()
     {
@@ -61,7 +64,7 @@ public class AxialGridGetOneTileAway : MonoBehaviour
         {
             if (oneAwayTileList[i] != null)
             {
-                oneAwayTileList[i].GetComponent<SpriteRenderer>().color = Color.white;
+                oneAwayTileList[i].GetComponent<SpriteRenderer>().color = blank;
                 oneAwayTileList[i].GetComponent<ClickableTile>().clickable = false;
             }
         }
@@ -91,7 +94,7 @@ public class AxialGridGetOneTileAway : MonoBehaviour
         {
             if (oneAwayTileList[i] != null)
             {
-                oneAwayTileList[i].GetComponent<SpriteRenderer>().color = Color.green;
+                oneAwayTileList[i].GetComponent<SpriteRenderer>().color = highlighted;
                 oneAwayTileList[i].GetComponent<ClickableTile>().clickable = true;
             }
         }
