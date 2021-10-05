@@ -41,6 +41,7 @@ public class PlayerPathRenderer : MonoBehaviour
     {
         pathPoints.Clear();
         pathPoints.Add(player.transform.position);
+        DrawPath();
     }
     
 }

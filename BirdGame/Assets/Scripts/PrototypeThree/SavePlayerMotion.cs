@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SavePlayerMotion : MonoBehaviour
 {
+
+    public GameObject playerGhost;
     
     public enum PlayerMovements
     {
@@ -18,9 +20,11 @@ public class SavePlayerMotion : MonoBehaviour
     public void AddMove()
     {
         playerMoves.Add(PlayerMovements.move);
+        playerPosition.Add(playerGhost.transform.position);
     }
 
     public List<PlayerMovements> playerMoves;
+    public List<Vector2> playerPosition;
 
 
 }
