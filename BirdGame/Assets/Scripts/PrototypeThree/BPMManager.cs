@@ -6,7 +6,6 @@ using UnityEngine;
 public class BPMManager : MonoBehaviour
 {
    public int _bpm;
-   public int songLengthInSeconds;
    public float secondsPerBeat;
 
    public int BeatsBeforeReset;
@@ -21,6 +20,9 @@ public class BPMManager : MonoBehaviour
    public AudioController _audioController;
 
    public PlayerDanceMovePos _playerDanceMovePos;
+   public OnBeat _onBeat;
+
+   public NPCDancePhase _npc;
    
    private void Start()
    {
@@ -43,14 +45,6 @@ public class BPMManager : MonoBehaviour
       _phaseSwitch.SetPlanningPhase();
       InvokeTrigger = false;
    }
-   
-   void TrackOnBeat()
-   {
-      //get the current position in the song
-      //Use moduolo
-      //0, <0.1, >0.4 is Perfect
-      //0.1 - 0.2, 0.3 - 0.4 is Great
-   }
 
    private void Update()
    {
@@ -60,6 +54,8 @@ public class BPMManager : MonoBehaviour
          if (timeElapsed >= secondsPerBeat)
          {
             _playerDanceMovePos.MovePlayer();
+            _npc.MoveToNewPos();
+            _onBeat.beatNumber++;
             timeElapsed = 0;
          }
       }

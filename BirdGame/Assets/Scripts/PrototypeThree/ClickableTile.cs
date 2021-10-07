@@ -11,7 +11,7 @@ public class ClickableTile : MonoBehaviour
 
     private void Start()
     {
-        _moveGhost = GameObject.Find("GameManager").GetComponent<MoveGhost>();
+        _moveGhost = GameObject.Find("PlayerGameManager").GetComponent<MoveGhost>();
     }
 
     private void OnMouseDown()
