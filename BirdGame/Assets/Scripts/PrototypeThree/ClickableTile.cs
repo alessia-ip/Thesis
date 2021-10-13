@@ -8,18 +8,21 @@ public class ClickableTile : MonoBehaviour
     public bool clickable = false;
     
     public MoveGhost _moveGhost;
+    public BeatsPlannedFor _beatsPlannedFor;
 
     private void Start()
     {
         _moveGhost = GameObject.Find("PlayerGameManager").GetComponent<MoveGhost>();
+        _beatsPlannedFor = GameObject.Find("PlayerGameManager").GetComponent<BeatsPlannedFor>();
     }
 
     private void OnMouseDown()
     {
-        if (clickable == true)
+        if (clickable == true && _beatsPlannedFor.BeatsRemaining > 0)
         {
             Debug.Log(this.gameObject.name);
             _moveGhost.ClickedTile = this.gameObject;
+            _beatsPlannedFor.BeatsRemaining--;
         }
     }
     

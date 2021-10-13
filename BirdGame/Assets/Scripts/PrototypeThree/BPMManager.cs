@@ -51,6 +51,7 @@ public class BPMManager : MonoBehaviour
       if (currentPhase._dancePhase == Phase.DancePhase.Beats)
       {
          timeElapsed = timeElapsed + Time.deltaTime;
+         
          if (timeElapsed >= secondsPerBeat)
          {
             _playerDanceMovePos.MovePlayer();

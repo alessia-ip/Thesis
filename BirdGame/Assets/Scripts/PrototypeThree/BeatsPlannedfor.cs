@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class BeatsPlannedfor : MonoBehaviour
+public class BeatsPlannedFor : MonoBehaviour
 {
     public int BeatsToPlanFor = 10;
     public int beatsRemaining;

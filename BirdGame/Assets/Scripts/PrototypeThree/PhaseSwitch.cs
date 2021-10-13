@@ -7,7 +7,9 @@ public class PhaseSwitch : MonoBehaviour
     
     public PlayerPathRenderer _playerPathRenderer;
     public SavePlayerMotion _savePlayerMotion;
-
+    public UiHideAndShow _uiHideAndShow;
+    public BeatsPlannedFor _beatsPlannedFor;
+    
     public Phase _phase;
     public AudioController _audioController;
     
@@ -18,6 +20,8 @@ public class PhaseSwitch : MonoBehaviour
         _playerPathRenderer.ClearPath();
         _savePlayerMotion.playerMoves.Clear();
         _savePlayerMotion.playerPosition.Clear();
+        _uiHideAndShow.DancePhaseUI();
+        _beatsPlannedFor.BeatsRemaining = _beatsPlannedFor.BeatsToPlanFor;
     }
 
     public void SetDancePhase()
