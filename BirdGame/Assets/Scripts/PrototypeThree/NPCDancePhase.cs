@@ -13,10 +13,13 @@ public class NPCDancePhase : MonoBehaviour
     
     public void MoveToNewPos()
     {
-        var newGridPos = _interpreter._vec2PosList[beatNum];
-        var newPhysicalPosition = _grid.tileArray[(int)newGridPos.x, (int)newGridPos.y].transform.position;
-        NPC.transform.position = newPhysicalPosition;
-        NPC.GetComponent<TilePosition>().axialCoordinates = newGridPos;
-        beatNum++;
+        if (_interpreter._vec2PosList.Count - 1 <= beatNum)
+        {
+            var newGridPos = _interpreter._vec2PosList[beatNum];
+            var newPhysicalPosition = _grid.tileArray[(int)newGridPos.x, (int)newGridPos.y].transform.position;
+            NPC.transform.position = newPhysicalPosition;
+            NPC.GetComponent<TilePosition>().axialCoordinates = newGridPos;
+            beatNum++;
+        }
     }
 }
