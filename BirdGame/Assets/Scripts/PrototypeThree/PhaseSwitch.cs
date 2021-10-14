@@ -6,6 +6,8 @@ public class PhaseSwitch : MonoBehaviour
 {
     
     public PlayerPathRenderer _playerPathRenderer;
+    public NPCLineRenderer _npcLineRenderer;
+    
     public SavePlayerMotion _savePlayerMotion;
     public UiHideAndShow _uiHideAndShow;
     public BeatsPlannedFor _beatsPlannedFor;
@@ -22,6 +24,8 @@ public class PhaseSwitch : MonoBehaviour
         _savePlayerMotion.playerPosition.Clear();
         _uiHideAndShow.DancePhaseUI();
         _beatsPlannedFor.BeatsRemaining = _beatsPlannedFor.BeatsToPlanFor;
+        
+        _npcLineRenderer.NewPointsList();
     }
 
     public void SetDancePhase()

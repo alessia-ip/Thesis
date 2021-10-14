@@ -19,6 +19,8 @@ public class NPCDanceInterpreter : MonoBehaviour
     public GameObject NPCGhost;
 
     public AxialGridManager _grid;
+
+    public int setNum = 0;
     
     // Start is called before the first frame update
     void Start()

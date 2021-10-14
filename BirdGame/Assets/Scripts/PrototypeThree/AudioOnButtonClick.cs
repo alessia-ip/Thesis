@@ -23,21 +23,23 @@ public class AudioOnButtonClick : MonoBehaviour
         if (Input.anyKeyDown)
         {
             if (Input.GetKeyDown(KeyCode.Q) ||
-                Input.GetKeyDown(KeyCode.W) )
+                Input.GetKeyDown(KeyCode.W) ||
+                Input.GetKeyDown(KeyCode.E))
             {
                 var sfxNum = Random.Range(0, actionSounds.Length );
                 sfxAud.PlayOneShot(actionSounds[sfxNum]);
-            } else if ( Input.GetKeyDown(KeyCode.E) ||
-                        Input.GetKeyDown(KeyCode.R) )
+            } else if ( Input.GetKeyDown(KeyCode.R))
             {
                 var sfxNum = Random.Range(0, birdSounds.Length );
                 sfxAud.PlayOneShot(birdSounds[sfxNum]);
             }
-            else
-            {
-                var sfxNum = Random.Range(0, otherSounds.Length );
-                sfxAud.PlayOneShot(otherSounds[sfxNum]);
-            }
         }
     }
+
+    public void clickHex()
+    {
+        var sfxNum = Random.Range(0, otherSounds.Length );
+        sfxAud.PlayOneShot(otherSounds[sfxNum]);
+    }
+    
 }

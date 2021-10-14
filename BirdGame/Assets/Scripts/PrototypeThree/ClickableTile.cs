@@ -9,11 +9,12 @@ public class ClickableTile : MonoBehaviour
     
     public MoveGhost _moveGhost;
     public BeatsPlannedFor _beatsPlannedFor;
-
+    public AudioOnButtonClick _audioOnButtonClick;
     private void Start()
     {
         _moveGhost = GameObject.Find("PlayerGameManager").GetComponent<MoveGhost>();
         _beatsPlannedFor = GameObject.Find("PlayerGameManager").GetComponent<BeatsPlannedFor>();
+        _audioOnButtonClick = GameObject.Find("ActionAudioManager").GetComponent<AudioOnButtonClick>();    
     }
 
     private void OnMouseDown()
@@ -23,6 +24,7 @@ public class ClickableTile : MonoBehaviour
             Debug.Log(this.gameObject.name);
             _moveGhost.ClickedTile = this.gameObject;
             _beatsPlannedFor.BeatsRemaining--;
+            _audioOnButtonClick.clickHex();
         }
     }
     
