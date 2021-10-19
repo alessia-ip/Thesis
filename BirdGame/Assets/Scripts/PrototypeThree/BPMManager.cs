@@ -23,6 +23,8 @@ public class BPMManager : MonoBehaviour
    public OnBeat _onBeat;
 
    public NPCDancePhase _npc;
+
+   private bool FirstBeat = false;
    
    private void Start()
    {
@@ -44,12 +46,22 @@ public class BPMManager : MonoBehaviour
       _audioController.StartPlanningPhaseAudio();
       _phaseSwitch.SetPlanningPhase();
       InvokeTrigger = false;
+      FirstBeat = false;
    }
 
    private void Update()
    {
       if (currentPhase._dancePhase == Phase.DancePhase.Beats)
       {
+         if (FirstBeat == false)
+         {
+            _playerDanceMovePos.MovePlayer();
+            _npc.MoveToNewPos();
+            _onBeat.beatNumber++;
+            timeElapsed = 0;
+            FirstBeat = true;
+         }
+         
          timeElapsed = timeElapsed + Time.deltaTime;
          
          if (timeElapsed >= secondsPerBeat)

@@ -24,7 +24,7 @@ public class AudioController : MonoBehaviour
         
     public void StartPlanningPhaseAudio()
     {
-        danceAudio.Pause();
+        danceAudio.Stop();
         planningAudio.Play();
         Debug.Log(danceAudio.time);
     }
