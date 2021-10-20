@@ -21,10 +21,12 @@ public class SavePlayerMotion : MonoBehaviour
     {
         playerMoves.Add(PlayerMovements.move);
         playerPosition.Add(playerGhost.transform.position);
+        tileAxial.Add(playerGhost.GetComponent<TilePosition>().axialCoordinates);
     }
 
     public List<PlayerMovements> playerMoves;
     public List<Vector2> playerPosition;
+    public List<Vector2> tileAxial;
 
 
 }

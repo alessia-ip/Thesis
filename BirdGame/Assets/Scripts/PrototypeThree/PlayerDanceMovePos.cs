@@ -15,6 +15,8 @@ public class PlayerDanceMovePos : MonoBehaviour
             Debug.Log("MOTION");
             player.transform.position = savePlayerMotion.playerPosition[0];
             savePlayerMotion.playerPosition.RemoveAt(0);
+            player.GetComponent<TilePosition>().axialCoordinates = savePlayerMotion.tileAxial[0];
+            savePlayerMotion.tileAxial.RemoveAt(0);
         }
     }
 }

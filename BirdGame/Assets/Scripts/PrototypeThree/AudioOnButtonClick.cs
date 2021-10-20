@@ -11,10 +11,13 @@ public class AudioOnButtonClick : MonoBehaviour
     public AudioClip[] otherSounds;
 
     public AudioSource sfxAud;
+
+    public GameObject yay;
     
     private void Start()
     {
         Random.seed = System.DateTime.Now.Millisecond;
+        yayOff();
     }
 
     // Update is called once per frame
@@ -28,6 +31,9 @@ public class AudioOnButtonClick : MonoBehaviour
             {
                 var sfxNum = Random.Range(0, actionSounds.Length );
                 sfxAud.PlayOneShot(actionSounds[sfxNum]);
+                yay.SetActive(true);
+                //TODO - move text to another script
+                Invoke("yayOff", 0.2f);
             } else if ( Input.GetKeyDown(KeyCode.R))
             {
                 var sfxNum = Random.Range(0, birdSounds.Length );
@@ -36,6 +42,11 @@ public class AudioOnButtonClick : MonoBehaviour
         }
     }
 
+    void yayOff()
+    {
+        yay.SetActive(false);
+    }
+    
     public void clickHex()
     {
         var sfxNum = Random.Range(0, otherSounds.Length );

@@ -25,6 +25,8 @@ public class BPMManager : MonoBehaviour
    public NPCDancePhase _npc;
 
    private bool FirstBeat = false;
+
+   public CheckIfOverlapping _checkIfOverlapping;
    
    private void Start()
    {
@@ -60,6 +62,7 @@ public class BPMManager : MonoBehaviour
             _onBeat.beatNumber++;
             timeElapsed = 0;
             FirstBeat = true;
+            _checkIfOverlapping.CheckOverlap();
          }
          
          timeElapsed = timeElapsed + Time.deltaTime;
@@ -70,6 +73,7 @@ public class BPMManager : MonoBehaviour
             _npc.MoveToNewPos();
             _onBeat.beatNumber++;
             timeElapsed = 0;
+            _checkIfOverlapping.CheckOverlap();
          }
       }
    }

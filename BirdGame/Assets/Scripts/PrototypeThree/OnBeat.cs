@@ -30,7 +30,14 @@ public class OnBeat : MonoBehaviour
 
         currentSongTime = aud.time;
 
+        
+        //This only matters when the player checks for it
+        
+        //take the current beat multiplied by the number of seconds
+        //This gives us what the timing SHOULD be in the song
         var perfectTiming = beatNumber * _bpmManager.secondsPerBeat;
+        
+        //Then we get the player's actual distance away as an always positive number
         var playerTiming = Mathf.Abs(currentSongTime - perfectTiming);
 
         //Debug.Log("Player time: " + playerTiming);
