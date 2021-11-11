@@ -44,7 +44,7 @@ public class CheckDistanceFromNpc : MonoBehaviour
         }
         else
         {
-            Debug.Log("Yeet");
+            //Debug.Log("Yeet");
         }
 
         if (_phase._dancePhase == Phase.DancePhase.Beats)

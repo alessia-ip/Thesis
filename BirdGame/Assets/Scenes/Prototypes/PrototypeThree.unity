@@ -517,7 +517,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 087e1a6f0a84e4cffb0257353985328a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0
   m_Pitch: 1
@@ -621,6 +621,7 @@ MonoBehaviour:
   npc: {fileID: 65130009}
   _phase: {fileID: 1163394549}
   aud: {fileID: 171748617}
+  aud2: {fileID: 0}
   clipOne: {fileID: 8300000, guid: 087e1a6f0a84e4cffb0257353985328a, type: 3}
   clipTwo: {fileID: 8300000, guid: 087e1a6f0a84e4cffb0257353985328a, type: 3}
   clipThree: {fileID: 8300000, guid: 087e1a6f0a84e4cffb0257353985328a, type: 3}
@@ -2264,6 +2265,7 @@ GameObject:
   - component: {fileID: 1163394553}
   - component: {fileID: 1163394554}
   - component: {fileID: 1163394555}
+  - component: {fileID: 1163394556}
   m_Layer: 0
   m_Name: PlayerGameManager
   m_TagString: Untagged
@@ -2515,6 +2517,19 @@ MonoBehaviour:
   danceUI: {fileID: 1190986551}
   actionUI: {fileID: 747888733}
   HexGrid: {fileID: 1174446094}
+--- !u!114 &1163394556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163394541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961b2213190bb4b0f85632ddc80a8659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beat: {fileID: 1163394553}
 --- !u!1 &1174446094
 GameObject:
   m_ObjectHideFlags: 0
