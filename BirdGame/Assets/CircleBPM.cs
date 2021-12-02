@@ -1,9 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class bpmManager : MonoBehaviour
+public class CircleBPM : MonoBehaviour
 {
     
     //https://www.gamedeveloper.com/audio/coding-to-the-beat---under-the-hood-of-a-rhythm-game-in-unity
@@ -28,16 +28,28 @@ public class bpmManager : MonoBehaviour
     public AudioSource musicSource;
 
     private bool firstBeat = true;
-
-    public int loopNumber = 1;
-
-
-
-
-    public AudioSource PauseMusic;
     
+    public int loopNumber = 0;
+    
+    public AudioSource PauseMusic;
+
+    public float previousBeat;
+
+    public GameObject NPC;
+    public GameObject Player;
+
+
+    public AudioSource countIn;
+    public AudioClip countInClip;
+    
+    private void Awake()
+    {
+        AudioListener.pause = true;
+    }
+
     // Start is called before the first frame update
-    void Start(){
+    void Start()
+    {
         //Calculate the number of seconds in each beat
         secPerBeat = 60f / songBpm;
 
@@ -45,12 +57,23 @@ public class bpmManager : MonoBehaviour
         dspSongTime = (float)AudioSettings.dspTime;
         
         //Start the music
-        musicSource.Play();
+        //musicSource.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Space) && AudioListener.pause == true && countIn.isPlaying == false)
+        {
+            /*AudioListener.pause = false;
+            musicSource.Play();
+            PauseMusic.Pause();*/
+            PauseMusic.Pause();
+            countIn.PlayOneShot(countInClip);
+            Invoke(nameof(countInDone), secPerBeat * 4);
+        }
+        
         if (musicSource.isPlaying == true)
         {
             //determine how many seconds since the song started
@@ -60,47 +83,40 @@ public class bpmManager : MonoBehaviour
             songPositionInBeats = songPosition / secPerBeat;
         }
 
-        if ((int)songPositionInBeats % 15 == 0 && firstBeat == false)
+        var beatInt = Mathf.Ceil(songPositionInBeats);
+
+        Debug.Log(beatInt - (32*loopNumber));
+
+        if (beatInt - (32*loopNumber) == 33)
         {
             AudioListener.pause = true;
             musicSource.Pause();
-            firstBeat = true;
-
-            var StartOnBeat = ((int)songPositionInBeats - 1) * secPerBeat;
-            musicSource.time = StartOnBeat;
-            
             PauseMusic.Play();
+            loopNumber++;
+            return;
         }
-        else if ((int)songPositionInBeats % 15 != 0)
+        
+        if (previousBeat != beatInt)
         {
-            firstBeat = false;
-        }
+            previousBeat = beatInt;
 
-        if (musicSource.isPlaying == false && Input.GetKeyDown(KeyCode.Space))
-        {
-            PauseMusic.Pause();
-            AudioListener.pause = false;
-            musicSource.Play();
-        }
-
-        loopNumber = Mathf.CeilToInt(songPositionInBeats / 5) - 1;
-
-        if ((int)songPositionInBeats % 5 == 0 && (int)songPositionInBeats != 0)
-        {
-            Debug.Log("Reaction: " + (int)songPositionInBeats);
-        } else {
+            //THINGS THAT HAPPEN ON BEAT GO HERE
             
-            Debug.Log("MATH HERE: " + ((int)songPositionInBeats - 5 * loopNumber));
-            
-            if ((int)songPositionInBeats - 5 * loopNumber == 1)
-            {
-                Debug.Log("NPC: " + (int)songPositionInBeats);
-            }
-            else
-            {
-                Debug.Log("ACTION: " + (int)songPositionInBeats);
-            }
+            NPC.GetComponent<MoveAroundCircle>().increment();
+            Player.GetComponent<MoveAroundCircle>().increment();
+
         }
+            
+       
 
     }
+
+
+    void countInDone()
+    {
+        AudioListener.pause = false;
+        musicSource.Play();
+        PauseMusic.Pause();
+    }
+    
 }

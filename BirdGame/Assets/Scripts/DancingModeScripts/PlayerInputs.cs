@@ -14,6 +14,7 @@ public class PlayerInputs : MonoBehaviour
         
         danceActions.Enable();
         
+        
         danceActions["Down Input"].performed += Down_action_performed;
         danceActions["Up Input"].performed += Up_action_performed;
         danceActions["Left Input"].performed += Left_action_performed;
