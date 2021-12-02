@@ -33,6 +33,11 @@ public class MoveAroundCircle : MonoBehaviour
     public void increment()
     {
         beat++;
+
+        
+        GetComponentInChildren<spriteUpdate>().updateSprite();
+        
+        
         
         if (beat == 17)
         {
