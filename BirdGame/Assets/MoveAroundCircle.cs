@@ -14,9 +14,13 @@ public class MoveAroundCircle : MonoBehaviour
 
     //NPC vars
     public TextAsset _npcFile;
+
+    public GameObject Npc;
+    
     
     private void Awake()
     {
+        
         if (isNPC)
         {
             //get full actions list
@@ -28,6 +32,7 @@ public class MoveAroundCircle : MonoBehaviour
                 npcActionsList.Add(_finalLineTemp);
             }
         }
+        
     }
 
     public void increment()
@@ -111,6 +116,47 @@ public class MoveAroundCircle : MonoBehaviour
                 default:
                     break;
             }
+        }
+        else //this is if you're the player character
+        {
+            switch (playerActionsList[0])
+            {
+                case "up":
+                    if (currentPoint.outPoint != null)
+                    {
+                        this.gameObject.transform.parent = null;
+                        this.gameObject.transform.position = currentPoint.outPoint.transform.position;
+                        this.gameObject.transform.parent = currentPoint.outPoint.transform;
+                    }
+                    playerActionsList.RemoveAt(0);
+                    break;
+                case "down":
+                    if (currentPoint.inPoint != null)
+                    {
+                        this.gameObject.transform.parent = null;
+                        this.gameObject.transform.position = currentPoint.inPoint.transform.position;
+                        this.gameObject.transform.parent = currentPoint.inPoint.transform;
+                    }
+                    playerActionsList.RemoveAt(0);
+                    break;
+                case "hold":
+                    playerActionsList.RemoveAt(0);
+                    break;
+                default:
+                    break;
+            }
+
+            if (Npc.transform.parent == this.transform.parent) //this is if you end up overlapping by accident!!!
+            {
+                currentPoint = this.gameObject.transform.parent.GetComponent<CirclePoint>();
+                if (currentPoint.nextPoint != null)
+                {
+                    this.gameObject.transform.parent = null;
+                    this.gameObject.transform.position = currentPoint.nextPoint.transform.position;
+                    this.gameObject.transform.parent = currentPoint.nextPoint.transform;
+                }
+            }
+            
         }
     }
     

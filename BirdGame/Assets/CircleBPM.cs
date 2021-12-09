@@ -96,7 +96,7 @@ public class CircleBPM : MonoBehaviour
             return;
         }
         
-        if (previousBeat != beatInt)
+        if (previousBeat != beatInt && AudioListener.pause == false)
         {
             previousBeat = beatInt;
 
