@@ -64,15 +64,15 @@ public class CircleBPM : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Space) && AudioListener.pause == true && countIn.isPlaying == false)
+        /*if (Input.GetKeyDown(KeyCode.Space) && AudioListener.pause == true && countIn.isPlaying == false)
         {
             /*AudioListener.pause = false;
             musicSource.Play();
-            PauseMusic.Pause();*/
+            PauseMusic.Pause();#1#
             PauseMusic.Pause();
             countIn.PlayOneShot(countInClip);
             Invoke(nameof(countInDone), secPerBeat * 4);
-        }
+        }*/
         
         if (musicSource.isPlaying == true)
         {
@@ -118,5 +118,15 @@ public class CircleBPM : MonoBehaviour
         musicSource.Play();
         PauseMusic.Pause();
     }
+
+
+    
+    public void confirmDance()
+    {
+        PauseMusic.Pause();
+        countIn.PlayOneShot(countInClip);
+        Invoke(nameof(countInDone), secPerBeat * 4);
+    }
+    
     
 }

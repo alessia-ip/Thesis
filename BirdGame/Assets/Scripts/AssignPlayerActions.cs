@@ -10,10 +10,10 @@ public class AssignPlayerActions : MonoBehaviour
     public GameObject[] actions;
     
     // Update is called once per frame
-    void Update()
+   public void ConfirmActions()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && AudioListener.pause)
-        {
+        /*if (Input.GetKeyDown(KeyCode.Space) && AudioListener.pause)
+        {*/
            _moveAroundPlayer.playerActionsList.Clear();
            string playerAction;
            for (int i = 0; i < 8; i++)
@@ -35,7 +35,7 @@ public class AssignPlayerActions : MonoBehaviour
                }
                _moveAroundPlayer.playerActionsList.Add(playerAction);
            }
-        }
+        /*}*/
     }
     
 }

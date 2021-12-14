@@ -8,6 +8,8 @@ public class CirclePoint : MonoBehaviour
     public GameObject inPoint;
     public GameObject nextPoint;
 
+
+    public bool isLeft;
     
     void OnDrawGizmosSelected()
     {

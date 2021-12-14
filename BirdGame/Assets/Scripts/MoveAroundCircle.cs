@@ -40,7 +40,7 @@ public class MoveAroundCircle : MonoBehaviour
         beat++;
 
         
-        GetComponentInChildren<spriteUpdate>().updateSprite();
+       // GetComponentInChildren<spriteUpdate>().updateSprite();
         
         
         
@@ -74,6 +74,11 @@ public class MoveAroundCircle : MonoBehaviour
     
     private void MoveToNextCirclePoint()
     {
+        if (!isNPC)
+        {
+            this.gameObject.GetComponentInChildren<Animator>().SetTrigger("JumpTrigger");
+        }
+        
         var currentPoint = this.gameObject.transform.parent.GetComponent<CirclePoint>();
         if (currentPoint.nextPoint != null)
         {
@@ -119,6 +124,9 @@ public class MoveAroundCircle : MonoBehaviour
         }
         else //this is if you're the player character
         {
+            
+           
+            
             switch (playerActionsList[0])
             {
                 case "up":
