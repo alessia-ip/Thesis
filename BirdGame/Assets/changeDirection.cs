@@ -8,7 +8,7 @@ public class changeDirection : MonoBehaviour
 
     void Update()
     {
-        if (transform.parent.name.Contains("Point"))
+        if (transform.parent != null && transform.parent.name.Contains("Point"))
         {
             var dir = transform.parent.GetComponent<CirclePoint>().isLeft;
             if (dir)

@@ -16,7 +16,10 @@ public class MoveAroundCircle : MonoBehaviour
     public TextAsset _npcFile;
 
     public GameObject Npc;
-    
+
+    public GameObject moveToMe;
+
+    public bool IsMoving;
     
     private void Awake()
     {
@@ -33,6 +36,8 @@ public class MoveAroundCircle : MonoBehaviour
             }
         }
         
+        moveToMe = this.gameObject;
+        
     }
 
     public void increment()
@@ -41,8 +46,7 @@ public class MoveAroundCircle : MonoBehaviour
 
         
        // GetComponentInChildren<spriteUpdate>().updateSprite();
-        
-        
+       
         
         if (beat == 17)
         {
@@ -71,20 +75,40 @@ public class MoveAroundCircle : MonoBehaviour
                 break;
         }
     }
-    
+
+    private void Update()
+    {
+        float step =  10 * Time.deltaTime;
+        if (this.transform.position != moveToMe.transform.position && IsMoving)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, moveToMe.transform.position, step);
+        }
+        
+        // Check if the position is approximately equal.
+        if (Vector3.Distance(transform.position, moveToMe.transform.position) < 0.001f)
+        {
+            // Swap the position of the cylinder.
+            this.gameObject.transform.position = moveToMe.transform.position;
+            this.gameObject.transform.parent = moveToMe.transform;
+            IsMoving = false;
+
+        }
+        
+    }
+
     private void MoveToNextCirclePoint()
     {
-        if (!isNPC)
-        {
-            this.gameObject.GetComponentInChildren<Animator>().SetTrigger("JumpTrigger");
-        }
+        
+        this.gameObject.GetComponentInChildren<Animator>().SetTrigger("JumpTrigger");
+        
         
         var currentPoint = this.gameObject.transform.parent.GetComponent<CirclePoint>();
         if (currentPoint.nextPoint != null)
         {
             this.gameObject.transform.parent = null;
-            this.gameObject.transform.position = currentPoint.nextPoint.transform.position;
-            this.gameObject.transform.parent = currentPoint.nextPoint.transform;
+            moveToMe = currentPoint.nextPoint;
+            /*this.gameObject.transform.position = currentPoint.nextPoint.transform.position;
+            this.gameObject.transform.parent = currentPoint.nextPoint.transform;*/
         }
     }
 
@@ -163,9 +187,17 @@ public class MoveAroundCircle : MonoBehaviour
                     this.gameObject.transform.position = currentPoint.nextPoint.transform.position;
                     this.gameObject.transform.parent = currentPoint.nextPoint.transform;
                 }
+                else
+                {
+                    this.gameObject.transform.parent = null;
+                    this.gameObject.transform.position = currentPoint.outPoint.transform.position;
+                    this.gameObject.transform.parent = currentPoint.outPoint.transform;
+                }
             }
             
         }
+        
+        
     }
     
     
