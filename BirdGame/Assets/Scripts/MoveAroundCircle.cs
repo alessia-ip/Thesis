@@ -20,6 +20,12 @@ public class MoveAroundCircle : MonoBehaviour
     public GameObject moveToMe;
 
     public bool IsMoving;
+
+    public NPCActions npcActions;
+
+    public PlayerComboTracker comboTracker;
+
+    public PlayerRhythm playerRhythm;
     
     private void Awake()
     {
@@ -57,15 +63,52 @@ public class MoveAroundCircle : MonoBehaviour
         {
             case 1:
                 InOrOut();
+                if (isNPC)
+                {
+                    npcActions.currentAction++;
+                }
+                else
+                {
+                    comboTracker.buttons[0] = "";
+                    comboTracker.buttons[1] = "";
+                    comboTracker.buttons[2] = "";
+                }
                 break;
             case 5:
                 InOrOut();
+                if (isNPC)
+                {
+                    npcActions.currentAction++;
+                }else
+                {
+                    comboTracker.buttons[0] = "";
+                    comboTracker.buttons[1] = "";
+                    comboTracker.buttons[2] = "";
+                }
                 break;
             case 9:
                 InOrOut();
+                if (isNPC)
+                {
+                    npcActions.currentAction++;
+                }else
+                {
+                    comboTracker.buttons[0] = "";
+                    comboTracker.buttons[1] = "";
+                    comboTracker.buttons[2] = "";
+                }
                 break;
             case 13:
                 InOrOut();
+                if (isNPC)
+                {
+                    npcActions.currentAction++;
+                }else
+                {
+                    comboTracker.buttons[0] = "";
+                    comboTracker.buttons[1] = "";
+                    comboTracker.buttons[2] = "";
+                }
                 break;
             case 16:
                 MoveToNextCirclePoint();
@@ -98,13 +141,17 @@ public class MoveAroundCircle : MonoBehaviour
 
     private void MoveToNextCirclePoint()
     {
-        
-        this.gameObject.GetComponentInChildren<Animator>().SetTrigger("JumpTrigger");
+
+        if (!isNPC)
+        {
+            playerRhythm.noteNum++;
+        }
         
         
         var currentPoint = this.gameObject.transform.parent.GetComponent<CirclePoint>();
         if (currentPoint.nextPoint != null)
         {
+            this.gameObject.GetComponentInChildren<Animator>().SetTrigger("JumpTrigger");
             this.gameObject.transform.parent = null;
             moveToMe = currentPoint.nextPoint;
             /*this.gameObject.transform.position = currentPoint.nextPoint.transform.position;

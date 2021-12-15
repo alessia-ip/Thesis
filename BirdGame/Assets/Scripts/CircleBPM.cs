@@ -125,6 +125,7 @@ public class CircleBPM : MonoBehaviour
     
     public void confirmDance()
     {
+        if(PauseMusic.isPlaying){}
         NPC.GetComponent<GetDistance>().clearAvg();
         PauseMusic.Pause();
         countIn.PlayOneShot(countInClip);
