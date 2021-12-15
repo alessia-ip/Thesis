@@ -22,6 +22,11 @@ public class GetDistance : MonoBehaviour
     {
         dist = Vector2.Distance(player.transform.position, this.gameObject.transform.position);
         Debug.Log(dist);
+
+        if (player.transform.parent == null || transform.parent == null)
+        {
+            return;
+        }
         
         if(player.transform.parent.gameObject == this.transform.parent.GetComponent<CirclePoint>().nextPoint
         || this.transform.parent.gameObject == player.transform.parent.GetComponent<CirclePoint>().nextPoint)
@@ -36,7 +41,7 @@ public class GetDistance : MonoBehaviour
             distText.GetComponent<TMP_Text>().text = "...are you trying to avoid me?";
         } else if (avgDistance < 5 && avgDistance > 3)
         {
-            distText.GetComponent<TMP_Text>().text = "I think we're both a bit of our practice here!";
+            distText.GetComponent<TMP_Text>().text = "I think we're both a bit out of practice here!";
         } else if (avgDistance <= 3 && avgDistance > 0.5f)
         {
             distText.GetComponent<TMP_Text>().text = "Just like old times! That's the spirit";
