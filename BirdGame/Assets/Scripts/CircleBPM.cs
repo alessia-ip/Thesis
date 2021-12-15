@@ -104,7 +104,7 @@ public class CircleBPM : MonoBehaviour
             
             NPC.GetComponent<MoveAroundCircle>().increment();
             Player.GetComponent<MoveAroundCircle>().increment();
-
+            NPC.GetComponent<GetDistance>().getAvg();
         }
             
        
@@ -117,12 +117,15 @@ public class CircleBPM : MonoBehaviour
         AudioListener.pause = false;
         musicSource.Play();
         PauseMusic.Pause();
+        NPC.GetComponent<GetDistance>().first = false;
+
     }
 
 
     
     public void confirmDance()
     {
+        NPC.GetComponent<GetDistance>().clearAvg();
         PauseMusic.Pause();
         countIn.PlayOneShot(countInClip);
         Invoke(nameof(countInDone), secPerBeat * 4);
