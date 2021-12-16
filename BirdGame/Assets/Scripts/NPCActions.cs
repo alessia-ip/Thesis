@@ -15,7 +15,7 @@ public class NPCActions : MonoBehaviour
 
    private void Update()
    {
-      if (currentAction > actionSet.Count - 1)
+      if (currentAction == actionSet.Count - 1)
       {
          currentAction = 0;
       }

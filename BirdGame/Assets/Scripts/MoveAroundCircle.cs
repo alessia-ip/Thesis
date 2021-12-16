@@ -196,7 +196,7 @@ public class MoveAroundCircle : MonoBehaviour
         else //this is if you're the player character
         {
             
-           
+           comboTracker.AddStep();
             
             switch (playerActionsList[0])
             {
