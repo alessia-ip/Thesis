@@ -10884,7 +10884,7 @@ MonoBehaviour:
 
     Tap along to the beat with <b>Q
     W E R</b> to make combos of three! Different combos  will make different dance
-    moves. Dance moves will mesh differently with your partner dependind on the dance.
+    moves. Dance moves will mesh differently with your partner depending on the dance.
     Experiment, and see what they do!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f69a6ec6820284c08ae4081c8e48d872, type: 2}
