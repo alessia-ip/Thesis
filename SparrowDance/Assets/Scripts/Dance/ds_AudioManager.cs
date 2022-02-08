@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 
 public class ds_AudioManager : MonoBehaviour
@@ -22,4 +23,25 @@ public class ds_AudioManager : MonoBehaviour
         songAudioSource.Pause();
         AudioListener.pause = true;
     }
+
+    public void PlayPauseMusic()
+    {
+        
+    }
+
+    public void PausePauseMusic()
+    {
+        
+    }
+
+    public void PlayCountdownMusic()
+    {
+        
+    }
+
+    public void PlaySFX(AudioClip sfxSound, AudioSource sfxSource)
+    {
+        
+    }
+    
 }

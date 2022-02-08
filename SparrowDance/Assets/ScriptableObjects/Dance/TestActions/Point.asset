@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe743313608d454dac468df2a476343, type: 3}
+  m_Name: Point
+  m_EditorClassIdentifier: 
+  name: Point
+  moodOfAction: 1
+  preferableCompatibleAction: {fileID: 11400000}
+  compatibleWith:
+  - {fileID: 11400000, guid: 0299d2f8e0d044f2682fd5559d3fa639, type: 2}
+  preferedActionVibeAmount: 20
+  compatibleActionVibeAmount: 10
+  otherActionVibeAmount: 2
