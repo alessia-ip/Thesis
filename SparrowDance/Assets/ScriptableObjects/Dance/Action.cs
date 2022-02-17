@@ -8,8 +8,8 @@ public class Action  : ScriptableObject
 {
     public string name;
     public MoodEnums.TypesOfAction moodOfAction;
-    public Action preferableCompatibleAction = new Action();
-    public List<Action> compatibleWith = new List<Action>();
+    /*public Action preferableCompatibleAction = new Action();
+    public List<Action> compatibleWith = new List<Action>();*/
     public string WithOrAgainstBonus;
     public int preferedActionVibeAmount;
     public MoodEnums.MoodTypes preferedActionMoodOutcome;
