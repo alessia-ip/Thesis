@@ -6,20 +6,9 @@ public class MoodEnums
 {
     public enum MoodTypes
     {
-        mysterious,
-        enthusiastic,
-        lighthearted,
-        thoughtful,
-        nervous,
-        frustrated
+        excited,
+        content,
+        affectionate
     }
-    
-    public enum TypesOfAction
-    {
-        suave,
-        energetic,
-        carefree,
-        calm,
-        reserved
-    }
+   
 }

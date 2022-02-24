@@ -18,26 +18,37 @@ public class DanceActions : ScriptableObject
         Passionate,
         Encouraging
     }
+
+    [Serializable]
+    public class playerInput
+    {
+        public string inputName;
+        public emotion inputMainEmotion;
+    }
     
     public string characterName;
     
     public string actionName;
     public emotion mainEmotion;
-    public UnityEvent callbackEvt;
-
+    public string PreferredAction;
+    public UnityEvent PreferredEventsToCall;
+    public playerInput[] AcceptedActions;
+    public UnityEvent AcceptedEventsToCall;
+    public UnityEvent OtherEventsToCall;
+    
     public void PreferredReactionEvents()
     {
-        callbackEvt.Invoke();
+        PreferredEventsToCall.Invoke();
     }
     
     public void OtherAcceptedReactionEvents()
     {
-        callbackEvt.Invoke();
+        AcceptedEventsToCall.Invoke();
     }
 
     public void OtherReactionEvents()
     {
-        callbackEvt.Invoke();
+        OtherEventsToCall.Invoke();
     }
-    
+
 }

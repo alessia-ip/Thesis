@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e2f887d67bd04d57973afc04be0bf67, type: 3}
+  m_Name: __DanceInfo
+  m_EditorClassIdentifier: 
+  CharacterName: Alex
+  baseSong: {fileID: 0}
+  songBeatsPerMinute: 0
+  DanceActionsArray:
+  - {fileID: 11400000, guid: 1e3d6b02a037941f4a88148b2050b772, type: 2}
+  - {fileID: 11400000, guid: 2a955dae7caaa445f8af2511b86511b0, type: 2}
+  - {fileID: 11400000, guid: cfa977521b42644c7817a2dbcfbf411f, type: 2}
+  - {fileID: 11400000, guid: eeb37fb9ec07a40789a91f1adf193a98, type: 2}
+  - {fileID: 11400000, guid: bc10283d7cb1e4d1ab11c01ba1011f4b, type: 2}
+  - {fileID: 11400000, guid: 50fb0689df3bc45389354a8778944d8d, type: 2}
+  - {fileID: 11400000, guid: 383c8a56e6e7f4556a37cad31ce6ff67, type: 2}
+  - {fileID: 11400000, guid: 1f78dd6766d33487186682a809300e1a, type: 2}
+  - {fileID: 11400000, guid: 195e4f289ee2a41ccbc0fbd8ebd4f95a, type: 2}
+  - {fileID: 11400000, guid: 0313a9694426d430fa99f6f401987b5c, type: 2}
+  - {fileID: 11400000, guid: 391f88f0dd6324e528d3cd1bd3f42aed, type: 2}
+  - {fileID: 11400000, guid: aed7ecbad12d2431ab1d043ec7edec44, type: 2}
+  - {fileID: 11400000, guid: 0b0678ad8498e44dc94131f93ef11af4, type: 2}
+  - {fileID: 11400000, guid: 4422df38bb52f4f7ab88ce1cdb35011d, type: 2}
+  - {fileID: 11400000, guid: 5461d029661234ec18a407a6e3e8d0fb, type: 2}
+  - {fileID: 11400000, guid: 6ada912c42c0d42a5b68ad415c513ffa, type: 2}
+  vibe: 0
+  excitement: 20
+  contentment: 30
+  affection: 15
+  surprise: 0
+  nervousness: 10
+  frustration: 0
+  contempt: 0
+  worry: 0
+  confusion: 0

@@ -13,8 +13,7 @@ public static class ds_Service
     public static MoodEnums TypesOfMood;
     public static ds_PlayerInputRecord PlayerInputRecord;
     public static ds_EventManager EventManagerInGame;
-    public static ds_EmotionTracker EmotionTrackerInGame;
-    public static ds_AllowableActions AllowableActionsInLevel;
+    public static ds_CurrentNpcEmotion EmotionTrackerInGame;
     public static ds_npcActionManager NpcActionsInLevel;
         
     public static void Initialize()
