@@ -24,10 +24,14 @@ public class ds_npcActionManager : MonoBehaviour
     {
         ds_Service.NpcActionsInLevel = this;
         Random.seed = (int)(System.DateTime.Now.Second * Time.deltaTime);
+
+        pickAction();
     }
 
     public void pickAction()
     {
+        if (currentlySelectedAction != null) return;
+
         List<DanceActions> actionsToChooseFrom = new List<DanceActions>();
         
         var randomNum = (Random.Range(1, 10));

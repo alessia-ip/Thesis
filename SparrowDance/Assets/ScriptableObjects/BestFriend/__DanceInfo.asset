@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: __DanceInfo
   m_EditorClassIdentifier: 
   CharacterName: Alex
-  baseSong: {fileID: 0}
-  songBeatsPerMinute: 0
+  baseSong: {fileID: 8300000, guid: 2b05c692d437047d488c04cb213bc247, type: 3}
+  songBeatsPerMinute: 120
   DanceActionsArray:
   - {fileID: 11400000, guid: 1e3d6b02a037941f4a88148b2050b772, type: 2}
   - {fileID: 11400000, guid: 2a955dae7caaa445f8af2511b86511b0, type: 2}

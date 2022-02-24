@@ -71,7 +71,7 @@ public class ds_TimingManager : MonoBehaviour
         {
             fourByFourBeatNumber = 1;
         }
-        ds_Service.EventManagerInGame._TriggerBeat();
+        //ds_Service.EventManagerInGame._TriggerBeat();
     }
     
 }
