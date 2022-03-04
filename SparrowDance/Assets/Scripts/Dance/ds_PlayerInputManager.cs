@@ -20,6 +20,8 @@ public class ds_PlayerInputManager : MonoBehaviour
         
         //planning phase inputs not handled by UI
         InputActions.actions["Spontaneous"].performed += StartDancePhase;
+        
+        
     }
 
 
@@ -28,22 +30,27 @@ public class ds_PlayerInputManager : MonoBehaviour
     private void SpontaneousInput(InputAction.CallbackContext obj)
     {
         if (ds_Service.GameManagerInGame.currentGameState != ds_GameManager.GameState.dancing) return;
-        
-        
+        Debug.Log("I'M DOING THE THING");
+        ds_Service.InputRecords.InputNewValue(0);
     }
     
     private void CalmInput(InputAction.CallbackContext obj)
     {
         if (ds_Service.GameManagerInGame.currentGameState != ds_GameManager.GameState.dancing) return;
         
+        ds_Service.InputRecords.InputNewValue(1);
     }
     private void PassionateInput(InputAction.CallbackContext obj)
     {
         if (ds_Service.GameManagerInGame.currentGameState != ds_GameManager.GameState.dancing) return;
+        
+        ds_Service.InputRecords.InputNewValue(2);
     }
     private void EncouragingInput(InputAction.CallbackContext obj)
     {
         if (ds_Service.GameManagerInGame.currentGameState != ds_GameManager.GameState.dancing) return;
+        
+        ds_Service.InputRecords.InputNewValue(3);
     }
     
     

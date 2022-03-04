@@ -44,7 +44,7 @@ public class ds_ActionInputTimer : MonoBehaviour
 
     public void RecordPlayerInput()
     {
-        if (ds_Service.PlayerInputRecord.PlayerDanceInputs[beatNumber - 1].isRecorded) return; //if there is already an input, we don't want to overwrite it
+        if (ds_Service.PlayerInputRecord.playerButtonInputs[beatNumber - 1] != 10) return; //if there is already an input, we don't want to overwrite it
         if (!currentlyRunning) return; //we also don't want to start if it's too early. More important for beats 2 and 3
     
     }

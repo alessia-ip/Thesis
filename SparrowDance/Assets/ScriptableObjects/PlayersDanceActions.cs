@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayersDanceActions : MonoBehaviour
+[CreateAssetMenu(fileName = "DanceActions", menuName = "ScriptableObjects/Player Dance Action")]
+public class PlayersDanceActions : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string actionName;
+    public bool isEncouraging;
 }

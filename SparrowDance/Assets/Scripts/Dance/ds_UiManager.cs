@@ -7,10 +7,21 @@ public class ds_UiManager : MonoBehaviour
 {
     public Slider playerSlider;
     public Slider npcSlider;
+
+    public GameObject playerPlanningCanv;
+    public GameObject npcPlanningCanv;
     
     void Update()
     {
-       updateSliderPosition(); 
+       updateSliderPosition();
+       if (ds_Service.GameManagerInGame.currentGameState == ds_GameManager.GameState.planning)
+       {
+           turnPlanningCanvasesOn();
+       }
+       else
+       {
+           turnPlanningCanvasesOff();
+       }
     }
 
     public void updateSliderPosition()
@@ -28,4 +39,17 @@ public class ds_UiManager : MonoBehaviour
     {
         image.SetActive(false);
     }
+
+    public void turnPlanningCanvasesOff()
+    {
+        npcPlanningCanv.SetActive(false);
+        playerPlanningCanv.SetActive(false);
+    }
+
+    public void turnPlanningCanvasesOn()
+    {
+        npcPlanningCanv.SetActive(true);
+        playerPlanningCanv.SetActive(true);
+    }
+
 }

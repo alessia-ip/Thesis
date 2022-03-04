@@ -15,7 +15,9 @@ public static class ds_Service
     public static ds_EventManager EventManagerInGame;
     public static ds_CurrentNpcEmotion EmotionTrackerInGame;
     public static ds_npcActionManager NpcActionsInLevel;
-        
+    public static ds_DanceIndicatorUpdate DanceIndicatorUpdatorInLevel;
+    public static ds_PlayerInputRecord InputRecords;
+    
     public static void Initialize()
     {
         TypesOfMood = new MoodEnums();

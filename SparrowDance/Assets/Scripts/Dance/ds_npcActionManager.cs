@@ -24,14 +24,21 @@ public class ds_npcActionManager : MonoBehaviour
     {
         ds_Service.NpcActionsInLevel = this;
         Random.seed = (int)(System.DateTime.Now.Second * Time.deltaTime);
-
-        pickAction();
+        ds_Service.EventManagerInGame._StartPlanningSection += clearAction;
+        ds_Service.EventManagerInGame._TriggerBeat += pickAction;
+        
     }
 
+    public void clearAction()
+    {
+        currentlySelectedAction = null;
+        ds_Service.DanceIndicatorUpdatorInLevel.updateNPCIndicator();
+    }
+    
     public void pickAction()
     {
-        if (currentlySelectedAction != null) return;
-
+        if(ds_Service.TimingManagerInGame.fourByFourBeatNumber != 1) return;
+        
         List<DanceActions> actionsToChooseFrom = new List<DanceActions>();
         
         var randomNum = (Random.Range(1, 10));
@@ -83,6 +90,10 @@ public class ds_npcActionManager : MonoBehaviour
             var randomAction = Random.Range(1, actionsToChooseFrom.Count);
             currentlySelectedAction = actionsToChooseFrom[randomAction - 1];
         }
+        Debug.Log(currentlySelectedAction);
+        
+        ds_Service.DanceIndicatorUpdatorInLevel.updateNPCIndicator();
     }
+
     
 }

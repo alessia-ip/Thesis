@@ -28,6 +28,7 @@ public class ds_EventManager : MonoBehaviour
     void Start()
     {
         _StartPlanningSection += DebugStartPlanning;
+        _TriggerBeat += DebugBeat;
 
         _StartPlanningSection();
     }
@@ -35,6 +36,11 @@ public class ds_EventManager : MonoBehaviour
     public void DebugStartPlanning()
     {
         Debug.Log("Planning phase begun");
+    }
+    
+    public void DebugBeat()
+    {
+        Debug.Log("BEAT");
     }
     
 }
