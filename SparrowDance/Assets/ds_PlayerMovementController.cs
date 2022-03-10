@@ -39,6 +39,7 @@ public class ds_PlayerMovementController : MonoBehaviour
         ds_Service.EventManagerInGame._TriggerBeat += moveToTheBeat;
         ds_Service.EventManagerInGame._StartCountdownSection += setInitDirection;
         ds_Service.EventManagerInGame._StartCountdownSection += resetMovementStart;
+        
     }
 
     private void Update()
@@ -115,7 +116,7 @@ public class ds_PlayerMovementController : MonoBehaviour
             return;
         }
 
-        player.transform.position = Vector3.MoveTowards(player.transform.position, NewPosition, Time.deltaTime * ds_Service.TimingManagerInGame.secondsPerBeat);
+        player.transform.position = Vector3.MoveTowards(player.transform.position, NewPosition, Time.deltaTime * (ds_Service.TimingManagerInGame.secondsPerBeat + 0.1f));
         
     }
 }

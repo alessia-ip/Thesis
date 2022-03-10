@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-[CanEditMultipleObjects]
+//[CanEditMultipleObjects]
 [CreateAssetMenu(fileName = "DanceActions", menuName = "ScriptableObjects/Dance Actions")]
 public class DanceActions : ScriptableObject
 {

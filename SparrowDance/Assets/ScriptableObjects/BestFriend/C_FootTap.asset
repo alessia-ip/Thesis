@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: Alex
   actionName: Foot Tap
   mainEmotion: 1
-  PreferredAction: 
+  PreferredAction: {fileID: 11400000, guid: 6899b21e5a4c741e5a4115ea3c30c8b8, type: 2}
   PreferredEventsToCall:
     m_PersistentCalls:
       m_Calls:
@@ -44,8 +44,13 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   AcceptedActions:
-  - inputName: 
-    inputMainEmotion: 0
+  - {fileID: 11400000, guid: 2fbcc6cc98ed14b9f98b7cac62895cc7, type: 2}
+  - {fileID: 11400000, guid: a4599c6dfedd34b68b730d950b1ecc31, type: 2}
+  - {fileID: 11400000, guid: fca47672e67d54daaa2d3721f846a384, type: 2}
+  - {fileID: 11400000, guid: eac6c07df885e49c282b1e4b4c5f7fb5, type: 2}
+  - {fileID: 11400000, guid: 6ab66bbd03f064a0a991e66759e3fb59, type: 2}
+  - {fileID: 11400000, guid: ed52284ab878e4c9a9b4d852135a91db, type: 2}
+  - {fileID: 11400000, guid: 1e2a18fc91c1f47d6b3144e0fa5134af, type: 2}
   AcceptedEventsToCall:
     m_PersistentCalls:
       m_Calls:
@@ -64,14 +69,14 @@ MonoBehaviour:
   OtherEventsToCall:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
-        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
-        m_MethodName: ModifyWorry
-        m_Mode: 4
+      - m_Target: {fileID: 6996303276658884765, guid: 6f534b403d82e44f98ae62432d0bcae1, type: 3}
+        m_TargetAssemblyTypeName: ds_playParticleEffect, Assembly-CSharp
+        m_MethodName: PlayParticleEffect
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

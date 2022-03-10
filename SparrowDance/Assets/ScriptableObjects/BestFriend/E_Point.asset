@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: Alex
   actionName: Point
   mainEmotion: 3
-  PreferredAction: 
+  PreferredAction: {fileID: 0}
   PreferredEventsToCall:
     m_PersistentCalls:
       m_Calls:
@@ -34,7 +34,55 @@ MonoBehaviour:
   AcceptedActions: []
   AcceptedEventsToCall:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: ModifyVibe
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 2
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: IsEncouraging
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: CheckOtherEmotion
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OtherEventsToCall:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6996303276658884765, guid: 6f534b403d82e44f98ae62432d0bcae1, type: 3}
+        m_TargetAssemblyTypeName: ds_playParticleEffect, Assembly-CSharp
+        m_MethodName: PlayParticleEffect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

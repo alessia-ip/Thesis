@@ -50,6 +50,11 @@ public class ds_CompareMoves : MonoBehaviour
         {
             npcAction.OtherEventsToCall.Invoke();
         }
+
+        if (ds_Service.StateChangeInScene.changeNeeded)
+        {
+            ds_Service.StateChangeInScene.InvokeMe();
+        }
         
     }
 }

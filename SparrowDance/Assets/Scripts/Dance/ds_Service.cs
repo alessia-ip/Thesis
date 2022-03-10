@@ -19,6 +19,9 @@ public static class ds_Service
     public static ds_PlayerInputRecord InputRecords;
     public static ds_playerActionsList AllPlayerActionsInGame;
     public static ds_CompareMoves CompareMovesInScene;
+    public static ds_particleManager ParticlesInScene;
+    public static StateChange StateChangeInScene;
+    
     
     public static void Initialize()
     {

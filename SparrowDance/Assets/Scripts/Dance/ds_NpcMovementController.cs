@@ -24,10 +24,21 @@ public class ds_NpcMovementController : MonoBehaviour
     public int CurrentNum = 1;
     public int direction = -1;
     
+    public Vector3 NewPosition;
+    private bool Moving = false;
+    
     void Start()
     {
         ds_Service.EventManagerInGame._TriggerBeat += moveToTheBeat;
         ds_Service.EventManagerInGame._StartCountdownSection += resetMovementStart;
+    }
+    
+    private void Update()
+    {
+        if (Moving)
+        {
+            moveToNewPosition();
+        }
     }
 
     void resetMovementStart()
@@ -59,7 +70,9 @@ public class ds_NpcMovementController : MonoBehaviour
                npc.transform.position = middlePositions[newPosition].transform.position;
                break;
            case RowNum.back:
-               npc.transform.position = backPositions[newPosition].transform.position;
+               //npc.transform.position = backPositions[newPosition].transform.position;
+               NewPosition = backPositions[newPosition].transform.position;
+               Moving = true;
                break;
        }
        
@@ -69,5 +82,21 @@ public class ds_NpcMovementController : MonoBehaviour
        {
            direction = direction * -1;
        }
+   }
+   
+   void moveToNewPosition()
+   {
+       Debug.Log("Slide");
+
+       if (Vector3.Distance(npc.transform.position, NewPosition) < 0.001f)
+       {
+           // Swap the position of the cylinder.
+           npc.transform.position = NewPosition;
+           Moving = false;
+           return;
+       }
+
+       npc.transform.position = Vector3.MoveTowards(npc.transform.position, NewPosition, Time.deltaTime * (ds_Service.TimingManagerInGame.secondsPerBeat + 0.1f));
+        
    }
 }
