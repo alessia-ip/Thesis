@@ -61,6 +61,7 @@ public class ds_PlayerInputManager : MonoBehaviour
     private void StartDancePhase(InputAction.CallbackContext obj)
     {
         if (ds_Service.GameManagerInGame.currentGameState != ds_GameManager.GameState.planning) return;
+        if (ds_Service.GameManagerInGame.isInMenu) return;
         ds_Service.EventManagerInGame._StartCountdownSection();
     }
 

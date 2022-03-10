@@ -19,8 +19,17 @@ public class ds_DanceIndicatorUpdate : MonoBehaviour
     private void Start()
     {
         ds_Service.DanceIndicatorUpdatorInLevel = this;
+
+        ds_Service.EventManagerInGame._StartPlanningSection += ClearIndicators;
     }
 
+    public void ClearIndicators()
+    {
+        playerIndicatorOne.GetComponent<Image>().color = Color.grey;
+        playerIndicatorTwo.GetComponent<Image>().color = Color.white;
+        npcIndicator.GetComponent<Image>().color = Color.white;
+    }
+    
     public void updateNPCIndicator()
     {
         if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 1) return;
@@ -40,7 +49,7 @@ public class ds_DanceIndicatorUpdate : MonoBehaviour
                 npcIndicator.GetComponent<Image>().color = tintEncouraging;
                 break;
             default:
-                playerIndicatorOne.GetComponent<Image>().color = Color.white;
+                npcIndicator.GetComponent<Image>().color = Color.white;
                 break;
         }
     }

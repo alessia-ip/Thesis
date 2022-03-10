@@ -7,6 +7,7 @@ public class ds_particleManager : MonoBehaviour
 {
     public ParticleSystem sparkleParticles;
     public ParticleSystem sweatParticles;
+    public ParticleSystem yayParticles;
 
     private void Start()
     {
@@ -25,6 +26,11 @@ public class ds_particleManager : MonoBehaviour
                 sweatParticles.Stop();
                 sweatParticles.Play();
                 break;
+            case 2:
+                yayParticles.Stop();
+                yayParticles.Play();
+                break;
+                
         }
     }
     
