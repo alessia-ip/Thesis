@@ -17,6 +17,8 @@ public static class ds_Service
     public static ds_npcActionManager NpcActionsInLevel;
     public static ds_DanceIndicatorUpdate DanceIndicatorUpdatorInLevel;
     public static ds_PlayerInputRecord InputRecords;
+    public static ds_playerActionsList AllPlayerActionsInGame;
+    public static ds_CompareMoves CompareMovesInScene;
     
     public static void Initialize()
     {

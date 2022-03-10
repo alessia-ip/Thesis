@@ -5,7 +5,7 @@ using UnityEngine.PlayerLoop;
 
 public class ds_CurrentNpcEmotion : MonoBehaviour
 {
-    private MoodEnums.MoodTypes baseEmotion; //this is the general emotion!
+    public MoodEnums.MoodTypes baseEmotion; //this is the general emotion!
     public MoodEnums.MoodTypes behaviorEmotion;  //this is the emotion to currently regard when picking actions
     public MoodEnums.MoodTypes tiebreaker; //if all values are equal, what emotion does this character gravitate towards
 

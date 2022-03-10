@@ -66,6 +66,8 @@ public class ds_playerActionsList : MonoBehaviour
         allPlayerDanceActionCombos[3,2] = three_two;
         allPlayerDanceActionCombos[3,3] = three_three;
 
+
+        ds_Service.AllPlayerActionsInGame = this;
     }
     
     

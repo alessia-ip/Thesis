@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionName: Beckon
   isEncouraging: 1
+  MainEmotion: 3

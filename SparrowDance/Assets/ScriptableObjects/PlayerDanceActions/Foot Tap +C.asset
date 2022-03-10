@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionName: Foot Tap +C
   isEncouraging: 0
+  MainEmotion: 1

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class ds_PlayerMovementController : MonoBehaviour
     public GameObject[] frontPositions;
 
     public GameObject player;
+
+    public Vector3 NewPosition;
     
     bool firstMove = true;
     
@@ -27,6 +30,8 @@ public class ds_PlayerMovementController : MonoBehaviour
 
     public int CurrentNum = 1;
     public int direction = -1;
+
+    private bool Moving = false;
     
     void Start()
     {
@@ -34,6 +39,14 @@ public class ds_PlayerMovementController : MonoBehaviour
         ds_Service.EventManagerInGame._TriggerBeat += moveToTheBeat;
         ds_Service.EventManagerInGame._StartCountdownSection += setInitDirection;
         ds_Service.EventManagerInGame._StartCountdownSection += resetMovementStart;
+    }
+
+    private void Update()
+    {
+        if (Moving)
+        {
+            moveToNewPosition();
+        }
     }
 
     void setInitDirection()
@@ -76,7 +89,9 @@ public class ds_PlayerMovementController : MonoBehaviour
                 player.transform.position = middlePositions[newPosition].transform.position;
                 break;
             case RowNum.back:
-                player.transform.position = backPositions[newPosition].transform.position;
+                //player.transform.position = backPositions[newPosition].transform.position;
+                NewPosition = backPositions[newPosition].transform.position;
+                Moving = true;
                 break;
         }
        
@@ -86,5 +101,21 @@ public class ds_PlayerMovementController : MonoBehaviour
         {
             direction = direction * -1;
         }
+    }
+
+    void moveToNewPosition()
+    {
+        Debug.Log("Slide");
+
+        if (Vector3.Distance(player.transform.position, NewPosition) < 0.001f)
+        {
+            // Swap the position of the cylinder.
+            player.transform.position = NewPosition;
+            Moving = false;
+            return;
+        }
+
+        player.transform.position = Vector3.MoveTowards(player.transform.position, NewPosition, Time.deltaTime * ds_Service.TimingManagerInGame.secondsPerBeat);
+        
     }
 }

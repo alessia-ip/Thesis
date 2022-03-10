@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: Alex
   actionName: Wiggle
   mainEmotion: 0
-  PreferredAction: 
+  PreferredAction: {fileID: 11400000, guid: 6ab66bbd03f064a0a991e66759e3fb59, type: 2}
   PreferredEventsToCall:
     m_PersistentCalls:
       m_Calls:
@@ -27,14 +27,95 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 15
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  AcceptedActions: []
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: ModifyExcitement
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  AcceptedActions:
+  - {fileID: 11400000, guid: 7c219ebd33a0e416bb7b011c138c0baf, type: 2}
+  - {fileID: 11400000, guid: f620322bb3a704cb1bfe55ad24aeb3da, type: 2}
+  - {fileID: 11400000, guid: 23afd020fe4ed44e1939675d017dc1a6, type: 2}
+  - {fileID: 11400000, guid: 6ab66bbd03f064a0a991e66759e3fb59, type: 2}
+  - {fileID: 11400000, guid: 6899b21e5a4c741e5a4115ea3c30c8b8, type: 2}
+  - {fileID: 11400000, guid: 9d6c2f3143d2d49b88277ce59f0411ac, type: 2}
+  - {fileID: 11400000, guid: aec8a1e6631ce46799dbfe6a560a9b18, type: 2}
+  - {fileID: 11400000, guid: eac6c07df885e49c282b1e4b4c5f7fb5, type: 2}
+  - {fileID: 11400000, guid: ed52284ab878e4c9a9b4d852135a91db, type: 2}
   AcceptedEventsToCall:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: ModifyVibe
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 2
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: ModifyExcitement
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: CheckOtherEmotion
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: IsEncouraging
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OtherEventsToCall:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3927086473562377052, guid: 3b253cc835f9f4544a6916cbf8c42048, type: 3}
+        m_TargetAssemblyTypeName: ds_EmotionModifiersToCall, Assembly-CSharp
+        m_MethodName: ModifyConfusion
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

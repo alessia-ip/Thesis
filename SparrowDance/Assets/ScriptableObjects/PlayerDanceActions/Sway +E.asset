@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionName: Sway +E
   isEncouraging: 1
+  MainEmotion: 3

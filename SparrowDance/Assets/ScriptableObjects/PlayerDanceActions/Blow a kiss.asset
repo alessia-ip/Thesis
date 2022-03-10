@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionName: Blow a kiss
   isEncouraging: 0
+  MainEmotion: 2

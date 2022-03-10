@@ -7,14 +7,17 @@ Shader "Unlit/ToonyShader"
         _DarkColor("Dark Color", Color) = (1,1,1,1)  //shadow
         _Threshold1("Threshold 1", Range(0, 1)) = 0.33 //light threshold for the highlight
         _Threshold2("Threshold 2", Range(0, 1)) = 0.66 //light threshold for the shadow
+        
+        _OutlineColor("Outline Color", Color)=(1,1,1,1)
+        _OutlineSize("OutlineSize", Range(0.0,1.5))=1.1
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
-        LOD 100
-
         Pass
         {
+            Tags { "RenderType"="Opaque" }
+            LOD 100
+            
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -40,9 +43,7 @@ Shader "Unlit/ToonyShader"
                 
             };
 
-           
-            
-             
+        
             
             struct Input {
 			    float2 uv_MainTex : TEXCOORD1;
@@ -80,5 +81,8 @@ Shader "Unlit/ToonyShader"
             }
             ENDCG
         }
+
+        
     }
+   
 }

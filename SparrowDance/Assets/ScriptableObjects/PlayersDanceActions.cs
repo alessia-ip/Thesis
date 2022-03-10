@@ -7,4 +7,6 @@ public class PlayersDanceActions : ScriptableObject
 {
     public string actionName;
     public bool isEncouraging;
+    public DanceActions.emotion MainEmotion;
+    
 }

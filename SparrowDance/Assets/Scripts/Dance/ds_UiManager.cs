@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 
 public class ds_UiManager : MonoBehaviour
@@ -10,6 +11,8 @@ public class ds_UiManager : MonoBehaviour
 
     public GameObject playerPlanningCanv;
     public GameObject npcPlanningCanv;
+
+    public Text NpcEmotionText;
     
     void Update()
     {
@@ -17,6 +20,7 @@ public class ds_UiManager : MonoBehaviour
        if (ds_Service.GameManagerInGame.currentGameState == ds_GameManager.GameState.planning)
        {
            turnPlanningCanvasesOn();
+           UpdateNpcEmotion();
        }
        else
        {
@@ -52,4 +56,20 @@ public class ds_UiManager : MonoBehaviour
         playerPlanningCanv.SetActive(true);
     }
 
+    public void UpdateNpcEmotion()
+    {
+        switch (ds_Service.EmotionTrackerInGame.baseEmotion)
+        {
+            case MoodEnums.MoodTypes.affectionate:
+                NpcEmotionText.text = "Affectionate";
+                break;
+            case MoodEnums.MoodTypes.content:
+                NpcEmotionText.text = "Content";
+                break;
+            case MoodEnums.MoodTypes.excited:
+                NpcEmotionText.text = "Excited";
+                break;
+        }
+    }
+    
 }

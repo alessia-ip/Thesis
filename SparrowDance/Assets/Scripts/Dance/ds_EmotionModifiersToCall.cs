@@ -64,4 +64,49 @@ public class ds_EmotionModifiersToCall : MonoBehaviour
       ds_Service.GameManagerInGame.sceneDanceInformation.confusion =
          ds_Service.GameManagerInGame.sceneDanceInformation.confusion + AmountToModifyBy;
    }
+
+   public void CheckOtherEmotion(float AmountToModifyBy)
+   {
+      var ActionToCheck = ds_Service.CompareMovesInScene.playerMove;
+
+      switch (ActionToCheck.MainEmotion)
+      {
+         case DanceActions.emotion.Calm:
+            ModifyContentment(AmountToModifyBy);
+            break;
+         case DanceActions.emotion.Spontaneous:
+            ModifyExcitement(AmountToModifyBy);
+            break;
+         case DanceActions.emotion.Passionate:
+            ModifyAffection(AmountToModifyBy);
+            break;
+      }
+   }
+
+   public void IsEncouraging(float AmountToModifyBy)
+   {
+      var ActionToCheck = ds_Service.CompareMovesInScene.playerMove;
+
+      if (ActionToCheck.isEncouraging)
+      {
+         switch (ActionToCheck.MainEmotion)
+         {
+            case DanceActions.emotion.Calm:
+               ModifyContentment(AmountToModifyBy);
+               break;
+            case DanceActions.emotion.Spontaneous:
+               ModifyExcitement(AmountToModifyBy);
+               break;
+            case DanceActions.emotion.Passionate:
+               ModifyAffection(AmountToModifyBy);
+               break;
+         }
+      }
+   }
+
+   public void ModifyEncouragement(float AmountToModifyBy)
+   {
+      ModifyConfusion(-AmountToModifyBy);
+   }
+   
 }

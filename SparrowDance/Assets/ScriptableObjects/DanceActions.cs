@@ -30,9 +30,9 @@ public class DanceActions : ScriptableObject
     
     public string actionName;
     public emotion mainEmotion;
-    public string PreferredAction;
+    public PlayersDanceActions PreferredAction;
     public UnityEvent PreferredEventsToCall;
-    public playerInput[] AcceptedActions;
+    public PlayersDanceActions[] AcceptedActions;
     public UnityEvent AcceptedEventsToCall;
     public UnityEvent OtherEventsToCall;
     

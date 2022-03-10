@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5012124731326061129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5012124731326061134}
+  - component: {fileID: 5012124731326061135}
+  m_Layer: 0
+  m_Name: PlayerActionsPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5012124731326061134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5012124731326061129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.32632527, y: 0.053102672, z: -2.1928005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5012124731326061135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5012124731326061129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e663eda6f7694ab2896edf7bf480fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zero_zero: {fileID: 11400000, guid: 7c219ebd33a0e416bb7b011c138c0baf, type: 2}
+  zero_one: {fileID: 11400000, guid: f620322bb3a704cb1bfe55ad24aeb3da, type: 2}
+  zero_two: {fileID: 11400000, guid: 23afd020fe4ed44e1939675d017dc1a6, type: 2}
+  zero_three: {fileID: 11400000, guid: 6ab66bbd03f064a0a991e66759e3fb59, type: 2}
+  one_zero: {fileID: 11400000, guid: 6899b21e5a4c741e5a4115ea3c30c8b8, type: 2}
+  one_one: {fileID: 11400000, guid: fca47672e67d54daaa2d3721f846a384, type: 2}
+  one_two: {fileID: 11400000, guid: a4599c6dfedd34b68b730d950b1ecc31, type: 2}
+  one_three: {fileID: 11400000, guid: 6ab66bbd03f064a0a991e66759e3fb59, type: 2}
+  two_zero: {fileID: 11400000, guid: 9d6c2f3143d2d49b88277ce59f0411ac, type: 2}
+  two_one: {fileID: 11400000, guid: 529af212f50fe4fa1a21100975faa37d, type: 2}
+  two_two: {fileID: 11400000, guid: 580685220ded4452d91b431de7e79c6b, type: 2}
+  two_three: {fileID: 11400000, guid: f0948aee0e96f4124a95687243d4a6ea, type: 2}
+  three_zero: {fileID: 11400000, guid: eac6c07df885e49c282b1e4b4c5f7fb5, type: 2}
+  three_one: {fileID: 11400000, guid: 1e2a18fc91c1f47d6b3144e0fa5134af, type: 2}
+  three_two: {fileID: 11400000, guid: ed52284ab878e4c9a9b4d852135a91db, type: 2}
+  three_three: {fileID: 11400000, guid: aec8a1e6631ce46799dbfe6a560a9b18, type: 2}
