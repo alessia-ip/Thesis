@@ -1193,8 +1193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.5, y: -31.900002}
-  m_SizeDelta: {x: 229.24, y: 293.6}
+  m_AnchoredPosition: {x: 5.9, y: -15.82}
+  m_SizeDelta: {x: 339.49, y: 305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208649853
 MonoBehaviour:
@@ -1231,12 +1231,18 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'You''re almost there!
 
-    Your dance partner will let you know what sort
-    of move they''ll take! Use the QWER buttons to make your response!
+
+    Your dance partner will let you know what
+    sort of move they''ll take! Use the <b>Q, W, E,</b> and <b>R</b> buttons to make
+    your response!
 
 
-    Press
-    R when you''re ready and we''ll count you in!'
+    <i>How you dance will affect how your partner feels, and
+    how much you vibe together!</i>
+
+
+    Press R when you''re ready and we''ll count
+    you in!'
 --- !u!222 &208649854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1487,8 +1493,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15.81}
-  m_SizeDelta: {x: 258.99, y: 267.49}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 386.01, y: 340.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &295602702
 MonoBehaviour:
@@ -20394,7 +20400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15.81}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 258.99, y: 141.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1616604234
@@ -22051,7 +22057,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -15.81}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 258.99, y: 218.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2130135683
