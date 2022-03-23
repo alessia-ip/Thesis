@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: Alex
   actionName: Twirl
   mainEmotion: 0
-  PreferredAction: {fileID: 0}
+  PreferredAction: {fileID: 11400000, guid: 23afd020fe4ed44e1939675d017dc1a6, type: 2}
   PreferredEventsToCall:
     m_PersistentCalls:
       m_Calls:
@@ -31,7 +31,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  AcceptedActions: []
+  AcceptedActions:
+  - {fileID: 11400000, guid: 9d6c2f3143d2d49b88277ce59f0411ac, type: 2}
+  - {fileID: 11400000, guid: 7c219ebd33a0e416bb7b011c138c0baf, type: 2}
+  - {fileID: 11400000, guid: 6ab66bbd03f064a0a991e66759e3fb59, type: 2}
+  - {fileID: 11400000, guid: ed52284ab878e4c9a9b4d852135a91db, type: 2}
+  - {fileID: 11400000, guid: f0948aee0e96f4124a95687243d4a6ea, type: 2}
+  - {fileID: 11400000, guid: eac6c07df885e49c282b1e4b4c5f7fb5, type: 2}
   AcceptedEventsToCall:
     m_PersistentCalls:
       m_Calls:

@@ -241,6 +241,49 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &50324600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50324602}
+  - component: {fileID: 50324601}
+  m_Layer: 0
+  m_Name: QuickRestart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &50324601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50324600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a34fc81476d004209be9f31ee1eaaa77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &50324602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50324600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7841012, y: -0.5029532, z: -0.029548109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &56360093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,7 +1236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.9, y: -15.82}
+  m_AnchoredPosition: {x: 5.9, y: -4}
   m_SizeDelta: {x: 339.49, y: 305}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208649853
@@ -1218,7 +1261,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 39ef22481acab49a4915c883a6b89daa, type: 3}
-    m_FontSize: 28
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1233,16 +1276,16 @@ MonoBehaviour:
 
 
     Your dance partner will let you know what
-    sort of move they''ll take! Use the <b>Q, W, E,</b> and <b>R</b> buttons to make
-    your response!
+    sort of move they''ll take! Use the <b>Q, W, E,</b> and <b>R</b> buttons to the
+    beat to make your response!
 
 
-    <i>How you dance will affect how your partner feels, and
-    how much you vibe together!</i>
+    <i>How you dance will affect how your partner
+    feels, and how much you vibe together!</i>
 
 
-    Press R when you''re ready and we''ll count
-    you in!'
+    Press R when you''re ready and
+    we''ll count you in!'
 --- !u!222 &208649854
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2972,6 +3015,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b625202fa3304bb0b604e06cf38ddd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thresholdOneCrossed: 0
+  thresholdTwoCrossed: 0
+  MoveInwardsP: 0
+  MoveInwardsN: 0
+  npcMover: {fileID: 1147858872}
+  playerMover: {fileID: 2117067615}
 --- !u!1 &750105084
 GameObject:
   m_ObjectHideFlags: 0
@@ -20299,7 +20348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebaa23f1b2a8d49ae9da89101414e5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatsToChangeAt: 20
+  beatsToChangeAt: 36
   currentBeats: 0
   changeNeeded: 0
 --- !u!1 &1607382268

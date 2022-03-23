@@ -69,6 +69,38 @@ public class ds_PlayerMovementController : MonoBehaviour
     
     void  moveToTheBeat()
     {
+        if (ds_Service.VibeMoveCloserInGame.MoveInwardsP && firstMove)
+        {
+            ds_Service.VibeMoveCloserInGame.MoveInwardsP = false;
+
+            if (ds_Service.VibeMoveCloserInGame.thresholdOneCrossed)
+            {
+                currentDanceRow = RowNum.middle;
+            }
+            
+            if (ds_Service.VibeMoveCloserInGame.thresholdTwoCrossed)
+            {
+                currentDanceRow = RowNum.front;
+            }
+            
+            //var newishPosition = CurrentNum;
+            switch (currentDanceRow)
+            {
+                case RowNum.front:
+                    //npc.transform.position = frontPositions[newishPosition].transform.position;
+                    NewPosition = frontPositions[1].transform.position;
+                    Moving = true;
+                    break;
+                case RowNum.middle:
+                    //npc.transform.position = middlePositions[newishPosition].transform.position;
+                    NewPosition = middlePositions[1].transform.position;
+                    Moving = true;
+                    break;
+            }
+            
+        
+        }
+        
         if (firstMove)
         {
             firstMove = false;
@@ -84,10 +116,14 @@ public class ds_PlayerMovementController : MonoBehaviour
         switch (currentDanceRow)
         {
             case RowNum.front:
-                player.transform.position = frontPositions[newPosition].transform.position;
+                //player.transform.position = frontPositions[newPosition].transform.position;
+                NewPosition = frontPositions[newPosition].transform.position;
+                Moving = true;
                 break;
             case RowNum.middle:
-                player.transform.position = middlePositions[newPosition].transform.position;
+                //player.transform.position = middlePositions[newPosition].transform.position;
+                NewPosition = middlePositions[newPosition].transform.position;
+                Moving = true;
                 break;
             case RowNum.back:
                 //player.transform.position = backPositions[newPosition].transform.position;

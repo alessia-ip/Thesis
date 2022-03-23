@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: Alex
   actionName: Sway
   mainEmotion: 3
-  PreferredAction: {fileID: 0}
+  PreferredAction: {fileID: 11400000, guid: 1e2a18fc91c1f47d6b3144e0fa5134af, type: 2}
   PreferredEventsToCall:
     m_PersistentCalls:
       m_Calls:
@@ -31,7 +31,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  AcceptedActions: []
+  AcceptedActions:
+  - {fileID: 11400000, guid: a4599c6dfedd34b68b730d950b1ecc31, type: 2}
+  - {fileID: 11400000, guid: eac6c07df885e49c282b1e4b4c5f7fb5, type: 2}
+  - {fileID: 11400000, guid: 2fbcc6cc98ed14b9f98b7cac62895cc7, type: 2}
+  - {fileID: 11400000, guid: 529af212f50fe4fa1a21100975faa37d, type: 2}
+  - {fileID: 11400000, guid: 7c219ebd33a0e416bb7b011c138c0baf, type: 2}
   AcceptedEventsToCall:
     m_PersistentCalls:
       m_Calls:

@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: Alex
   actionName: Stretch Leg
   mainEmotion: 2
-  PreferredAction: {fileID: 0}
+  PreferredAction: {fileID: 11400000, guid: aec8a1e6631ce46799dbfe6a560a9b18, type: 2}
   PreferredEventsToCall:
     m_PersistentCalls:
       m_Calls:
@@ -31,7 +31,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  AcceptedActions: []
+  AcceptedActions:
+  - {fileID: 11400000, guid: f0948aee0e96f4124a95687243d4a6ea, type: 2}
+  - {fileID: 11400000, guid: 580685220ded4452d91b431de7e79c6b, type: 2}
+  - {fileID: 11400000, guid: 2fbcc6cc98ed14b9f98b7cac62895cc7, type: 2}
+  - {fileID: 11400000, guid: eac6c07df885e49c282b1e4b4c5f7fb5, type: 2}
+  - {fileID: 11400000, guid: f620322bb3a704cb1bfe55ad24aeb3da, type: 2}
   AcceptedEventsToCall:
     m_PersistentCalls:
       m_Calls:
