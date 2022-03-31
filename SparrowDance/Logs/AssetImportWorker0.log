@@ -179,3 +179,43 @@ Received Import Request.
 Start importing Assets/SplitScreenCameraAssets/PlayerRenderTexture.renderTexture using Guid(b0fb82eaef8334226a645a0002ba0057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274334bb48aba058ca69e9b2c946386b') in 0.287235 seconds 
   Import took 0.293989 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 380.768298 seconds.
+  path: Assets/Shaders/ToonyShaderBasic.shader
+  artifactKey: Guid(0cd258f089c484536b95860a743d436f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/ToonyShaderBasic.shader using Guid(0cd258f089c484536b95860a743d436f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ca9b87aa79a23023cdbe58f8d920b9') in 0.106759 seconds 
+  Import took 0.114090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 169.204052 seconds.
+  path: Assets/Shaders/ToonyShaderBasic.shader
+  artifactKey: Guid(0cd258f089c484536b95860a743d436f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/ToonyShaderBasic.shader using Guid(0cd258f089c484536b95860a743d436f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88854b623f7619ce1d1adbdc28237202') in 0.011212 seconds 
+  Import took 0.033893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 602.958430 seconds.
+  path: Assets/RenderSettings/UniversalRenderPipelineAsset_Renderer.asset
+  artifactKey: Guid(a4828379eb53d4031a65dc292aa344fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RenderSettings/UniversalRenderPipelineAsset_Renderer.asset using Guid(a4828379eb53d4031a65dc292aa344fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccce811df8eb311b0f2e788f8a563419') in 0.376026 seconds 
+  Import took 0.399768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.956715 seconds.
+  path: Assets/SplitScreenCameraAssets/NPCRenderTexture.asset
+  artifactKey: Guid(a0ee5d02d4a7d4046af5f3b90ab09975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SplitScreenCameraAssets/NPCRenderTexture.asset using Guid(a0ee5d02d4a7d4046af5f3b90ab09975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3257a0e27d0062fbc76ed5b05795ded4') in 0.056452 seconds 
+  Import took 0.063110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.359960 seconds.
+  path: Assets/SplitScreenCameraAssets/NPCRenderTexture.asset
+  artifactKey: Guid(a0ee5d02d4a7d4046af5f3b90ab09975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SplitScreenCameraAssets/NPCRenderTexture.asset using Guid(a0ee5d02d4a7d4046af5f3b90ab09975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050931d7574ad36d60cc584957d64861') in 0.009105 seconds 
+  Import took 0.016944 seconds .
+

@@ -1,5 +1,6 @@
-Shader "Unlit/ToonyShader"
-{ Properties
+Shader "Unlit/ToonyShaderBasic"
+{
+    Properties
     {
         _MainTex ("Texture", 2D) = "white" {} //main albedo - this is the img
         _LightColor("Light Color", Color) = (1,1,1,1)  //highlight
@@ -8,7 +9,7 @@ Shader "Unlit/ToonyShader"
         _Threshold2("Threshold 2", Range(0, 1)) = 0.66 //light threshold for the shadow
         
         _OutlineColor("Outline Color", Color)=(1,1,1,1)
-        _OutlineSize("OutlineSize", Range(0.0,0.5))=0.025
+        _OutlineSize("OutlineSize", Range(0.0,1.5))=1.1
     }
     SubShader
     {
@@ -23,7 +24,9 @@ Shader "Unlit/ToonyShader"
             
             // make fog work
             #pragma multi_compile_fog
+
             #include "UnityCG.cginc"
+
            struct appdata
             {
                 float4 vertex : POSITION;
@@ -39,11 +42,13 @@ Shader "Unlit/ToonyShader"
                 float lightDot : TEXCOORD0;
                 
             };
+
         
             
             struct Input {
-                float2 uv_MainTex : TEXCOORD1;
-            };
+			    float2 uv_MainTex : TEXCOORD1;
+		    };
+
             sampler2D _MainTex;
             fixed4 _LightColor;
             fixed4 _DarkColor;
@@ -76,52 +81,8 @@ Shader "Unlit/ToonyShader"
             }
             ENDCG
         }
-        Pass
-        {
-            Cull front    
-            CGPROGRAM
-            #pragma vertex vert
-            #pragma fragment frag
-            
-            #include "UnityCG.cginc"
-            fixed4 _OutlineColor;
-            float _OutlineSize;
-           struct appdata
-            {
-                float4 vertex : POSITION;
-                float3 normal : NORMAL;
-            };
- 
-            struct v2f
-            {
-                float4 position : SV_POSITION;
-                
-            };
-        
-        struct Input {
-                        float2 uv_MainTex : TEXCOORD1;
-                    };
-            v2f vert (appdata v)
-            {
-                v2f o;
-                float3 normal = normalize(v.normal);
-                float3 outlineOffset = normal * _OutlineSize;
-                float3 position = v.vertex + outlineOffset;
-                
-                o.position = UnityObjectToClipPos(position);
-     
-                return o;
-            }
-       
- 
-            fixed4 frag (v2f i, Input IN) : SV_Target
-            {
-                return _OutlineColor;
-            }
-            ENDCG
-        }
-        
+
         
     }
-    Fallback "Standard"
+   
 }
