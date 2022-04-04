@@ -27,8 +27,7 @@ public class ds_AudioManager : MonoBehaviour
 
         ds_Service.EventManagerInGame._StartPlanningSection += PauseDanceMusic;
         ds_Service.EventManagerInGame._StartPlanningSection += PlayPauseMusic;
-
-        /*ds_Service.EventManagerInGame._TriggerBeat += MetronomeTick;*/
+        
     }
 
     private void Start()
@@ -71,11 +70,10 @@ public class ds_AudioManager : MonoBehaviour
         ds_Service.EventManagerInGame._StartDanceSection();
     }
 
-    /*public void MetronomeTick()
+    public void MetronomeTick()
     {
-        double time = AudioSettings.dspTime + ds_Service.TimingManagerInGame.secondsPerBeat;
-        metronomeSouce.PlayScheduled(time);
-    }*/
+        metronomeSouce.Play();
+    }
     
     /*public void PlaySFX(AudioClip sfxSound, AudioSource sfxSource)
     {

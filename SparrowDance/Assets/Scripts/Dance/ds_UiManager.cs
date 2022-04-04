@@ -36,7 +36,6 @@ public class ds_UiManager : MonoBehaviour
     
     void turnOnSliderCanvV2()
     {
-        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 1) return;
         sliderObject.SetActive(true);
     }
     
