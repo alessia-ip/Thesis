@@ -9,13 +9,16 @@ Shader "Unlit/ToonyShader"
         
         _OutlineColor("Outline Color", Color)=(1,1,1,1)
         _OutlineSize("OutlineSize", Range(0.0,0.5))=0.025
+        _OutlineTexture("OutlineTexture", 2D) = "black" {} //this is the texture (pencil!) of the outline
     }
     SubShader
     {
+    Tags { "RenderType"="Transparent" "Queue"="Transparent" "IgnoreProjector"="True" }
+                LOD 100
+                Blend SrcAlpha OneMinusSrcAlpha 
         Pass
         {
-            Tags { "RenderType"="Opaque" }
-            LOD 100
+            
             
             CGPROGRAM
             #pragma vertex vert
@@ -82,32 +85,37 @@ Shader "Unlit/ToonyShader"
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            
             #include "UnityCG.cginc"
             fixed4 _OutlineColor;
             float _OutlineSize;
+            sampler2D _OutlineTexture;
+            
            struct appdata
             {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
+                float2 uv_OutlineTexture : TEXCOORD2;
             };
  
             struct v2f
             {
                 float4 position : SV_POSITION;
+                float2 uv_OutlineTexture : TEXCOORD2;
                 
             };
         
-        struct Input {
-                        float2 uv_MainTex : TEXCOORD1;
-                    };
+            struct Input {
+                float2 uv_MainTex : TEXCOORD1;
+                float2 uv_OutlineTexture : TEXCOORD2;
+            };
+            
             v2f vert (appdata v)
             {
                 v2f o;
                 float3 normal = normalize(v.normal);
                 float3 outlineOffset = normal * _OutlineSize;
                 float3 position = v.vertex + outlineOffset;
-                
+                o.uv_OutlineTexture = v.uv_OutlineTexture;
                 o.position = UnityObjectToClipPos(position);
      
                 return o;
@@ -116,7 +124,10 @@ Shader "Unlit/ToonyShader"
  
             fixed4 frag (v2f i, Input IN) : SV_Target
             {
-                return _OutlineColor;
+                fixed4 col;
+                fixed4 c = tex2D(_OutlineTexture, IN.uv_OutlineTexture);
+                col = c * _OutlineColor;
+                return col;
             }
             ENDCG
         }
