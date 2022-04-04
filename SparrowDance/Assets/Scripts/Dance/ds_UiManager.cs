@@ -13,6 +13,32 @@ public class ds_UiManager : MonoBehaviour
     public GameObject npcPlanningCanv;
 
     public Text NpcEmotionText;
+
+    public GameObject sliderObject;
+    
+    void Start()
+    {
+        ds_Service.EventManagerInGame._TriggerBeat += turnOffSliderCanv;
+        ds_Service.EventManagerInGame._TriggerBeat += turnOnSliderCanv;
+        ds_Service.EventManagerInGame._StartPlanningSection += turnOnSliderCanvV2;
+    }
+
+    void turnOffSliderCanv()
+    {
+        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 4) return;
+        sliderObject.SetActive(false);
+    }
+    void turnOnSliderCanv()
+    {
+        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 1) return;
+        sliderObject.SetActive(true);
+    }
+    
+    void turnOnSliderCanvV2()
+    {
+        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 1) return;
+        sliderObject.SetActive(true);
+    }
     
     void Update()
     {
