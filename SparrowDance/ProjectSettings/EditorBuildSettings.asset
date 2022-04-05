@@ -14,4 +14,5 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Dance/Demo.unity
     guid: 6eb7ae52bfc864a2daff6db113ba1f7c
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 942f7fd6ac4f14e4c83992ac91122416, type: 2}
