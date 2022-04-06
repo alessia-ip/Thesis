@@ -15,24 +15,27 @@ public class Overworld_PlayerController : MonoBehaviour
     public float movementSpeed = 3f;
     public float turnSpeed = 0.1f;
     public float movementSmoothingSpeed = 1f;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    
+    [Header("Animation Components")] 
+    public Animator playerAnimator;
+
+    #region movement 
+
+
     void FixedUpdate()
     {
         GetMovement();
         MoveThePlayer();
         TurnThePlayer();
     }
-    
+
     void MoveThePlayer()
     {
         Vector3 movement = CameraDirection(movementDirection) * movementSpeed * Time.deltaTime;
+        if (InputActions.currentActionMap.actions[0].ReadValue<Vector2>() == Vector2.zero)
+        {
+            movement = Vector3.zero;
+        }
         playerRigidbody.MovePosition(transform.position + movement);
     }
     
@@ -77,5 +80,28 @@ public class Overworld_PlayerController : MonoBehaviour
 
         }
     }
+    #endregion
     
+    #region animation
+
+    void Update()
+    {
+        TriggerWalkingAnimation();
+    }
+
+    void TriggerWalkingAnimation()
+    {
+        var input = InputActions.currentActionMap.actions[0].ReadValue<Vector2>();
+        if (input == Vector2.zero)
+        {
+            playerAnimator.SetBool("IsWalking", false);
+        }
+        else
+        {
+            playerAnimator.SetBool("IsWalking", true);
+        }
+        
+    }
+    
+    #endregion
 }
