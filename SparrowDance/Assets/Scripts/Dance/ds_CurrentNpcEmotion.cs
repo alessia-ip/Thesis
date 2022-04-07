@@ -15,6 +15,9 @@ public class ds_CurrentNpcEmotion : MonoBehaviour
     void Start()
     {
         ds_Service.EmotionTrackerInGame = this;
+        ds_Service.EventManagerInGame._StartPlanningSection += UpdateBehaviorEmotion;
+        
+        UpdateBehaviorEmotion();
     }
 
     // Update is called once per frame

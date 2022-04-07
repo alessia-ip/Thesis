@@ -1407,8 +1407,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2836171027499502160}
-  - component: {fileID: 3177230340698444009}
-  - component: {fileID: 3177230340698444008}
   m_Layer: 7
   m_Name: BestFriendNoWeightPainting
   m_TagString: Untagged
@@ -1449,41 +1447,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -40.253, y: 0, z: 0}
---- !u!95 &3177230340698444009
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3177230340698444010}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7ac5596a6372c401ba86de62deb37b70, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3177230340698444008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3177230340698444010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RigLayers:
-  - m_Rig: {fileID: 5764564506639223429}
-    m_Active: 1
-  m_Effectors: []
 --- !u!1 &3189519183024604296
 GameObject:
   m_ObjectHideFlags: 0
