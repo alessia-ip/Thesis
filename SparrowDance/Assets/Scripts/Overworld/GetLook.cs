@@ -11,6 +11,7 @@ public class GetLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         RaycastHit hit;
         
         
@@ -18,6 +19,14 @@ public class GetLook : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, _LayerMask))
         {
             Debug.Log(hit.collider.gameObject.name);
+            
+            LookingAtNPC = true;
+            
         }
+        else
+        {
+            LookingAtNPC = false;
+        }
+        
     }
 }

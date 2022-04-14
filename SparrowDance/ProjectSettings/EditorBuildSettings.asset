@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Overworld/IntroScene.unity
+    guid: a5368d7d9877246af9868f5a13aea2b1
+  - enabled: 1
     path: Assets/Scenes/Dance/TutorialScene.unity
     guid: afa772f3234344e25a170a341be6fcf3
   - enabled: 1

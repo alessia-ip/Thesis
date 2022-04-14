@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Overworld_DetectCharacter : MonoBehaviour
 {
-    [SerializeField] private GameObject characterTrigger;
+    public GameObject characterTrigger;
     
     private void OnTriggerEnter(Collider other)
     {

@@ -244,6 +244,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Dance",
+                    "type": "Button",
+                    "id": "9045531d-417a-45f7-895e-d72bfb312823",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Think",
+                    "type": "Button",
+                    "id": "00f8ff01-98a4-424c-ae16-fc6ba64f2713",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -356,6 +372,28 @@
                     "action": "Walk",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "074ebbb4-a62d-4394-8c79-4d865b111933",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dance",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0a41631-6aad-46cc-8a48-7297c4463e57",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Think",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
