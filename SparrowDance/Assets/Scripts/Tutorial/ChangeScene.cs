@@ -10,8 +10,11 @@ public class ChangeScene : MonoBehaviour
     private bool three = false;
     private bool four = false;
 
+    private bool Triggered = false;
+    
     public GameObject TextOne;
     public GameObject TextTwo;
+    public GameObject TextThree;
     
     // Update is called once per frame
     void Update()
@@ -33,13 +36,18 @@ public class ChangeScene : MonoBehaviour
             four = true;
         }
 
-        if (one && two && three && four)
+        if (one && two && three && four && !Triggered)
         {
             TextOne.SetActive(false);
             TextTwo.SetActive(true);
+            Triggered = true;
+        }
+
+        if (TextThree.activeInHierarchy)
+        {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
             }
         }
     }
