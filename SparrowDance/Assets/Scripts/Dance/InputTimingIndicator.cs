@@ -24,6 +24,7 @@ public class InputTimingIndicator : MonoBehaviour
         timingTwo = 0;
 
         ds_Service.EventManagerInGame._TriggerBeat += determineWhichBar;
+        
     }
 
     void determineWhichBar()

@@ -70,10 +70,10 @@ public class ds_AudioManager : MonoBehaviour
         ds_Service.EventManagerInGame._StartDanceSection();
     }
 
-    public void MetronomeTick()
+    /*public void MetronomeTick()
     {
         metronomeSouce.Play();
-    }
+    }*/
     
     /*public void PlaySFX(AudioClip sfxSound, AudioSource sfxSource)
     {

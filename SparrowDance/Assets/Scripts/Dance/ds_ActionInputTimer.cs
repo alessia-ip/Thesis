@@ -21,7 +21,7 @@ public class ds_ActionInputTimer : MonoBehaviour
     public float elapsedTime = 0;
     public float maxAllowedTime;
     public TimingScore currentScore;
-    public float recordOfStartTime;
+    public double recordOfStartTime;
     private void Start()
     {
         secondsPerBeat = ds_Service.TimingManagerInGame.secondsPerBeat;
@@ -52,7 +52,7 @@ public class ds_ActionInputTimer : MonoBehaviour
     public void UpdateTheTimeAndScore()
     {
         if (!currentlyRunning) return; 
-        elapsedTime = ds_Service.TimingManagerInGame.currentSongPosition - recordOfStartTime;
+        elapsedTime = (float)ds_Service.TimingManagerInGame.currentSongPosition - (float)recordOfStartTime;
 
         if (elapsedTime < secondsPerBeat/8*3)
         {

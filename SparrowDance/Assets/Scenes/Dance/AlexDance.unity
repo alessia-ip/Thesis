@@ -7536,7 +7536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &512409593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28965,13 +28965,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1542642352}
   dspSongTime: 0
-  songBeatsPerMinute: 120
+  prevDspSongTime: 0
+  songBeatsPerMinute: 100
   secondsPerBeat: 0
   currentSongPosition: 0
   songPositionInBeats: 0
   previousBeatNumber: 0
   currentBeatNumber: 0
   fourByFourBeatNumber: 0
+  secondsToNextBeat: 0
 --- !u!1 &1143173632
 GameObject:
   m_ObjectHideFlags: 0
@@ -30615,7 +30617,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487952148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6daa9aade350420d9743c1128cc8b02, type: 3}
   m_Name: 
@@ -35656,7 +35658,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 2b05c692d437047d488c04cb213bc247, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1.1
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -37709,7 +37711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2005046894
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43483,14 +43485,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8502544660519894018
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8502544660519894019}
-  m_Enabled: 1
 --- !u!1 &8502544660519894019
 GameObject:
   m_ObjectHideFlags: 0
@@ -43501,7 +43495,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8502544660519894016}
   - component: {fileID: 8502544660519894017}
-  - component: {fileID: 8502544660519894018}
   m_Layer: 0
   m_Name: NPC Camera
   m_TagString: MainCamera
@@ -43791,14 +43784,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8502544662160168786
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8502544662160168787}
-  m_Enabled: 1
 --- !u!1 &8502544662160168787
 GameObject:
   m_ObjectHideFlags: 0
@@ -43809,7 +43794,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8502544662160168784}
   - component: {fileID: 8502544662160168785}
-  - component: {fileID: 8502544662160168786}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: MainCamera

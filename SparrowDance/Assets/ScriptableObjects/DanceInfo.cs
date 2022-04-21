@@ -10,7 +10,9 @@ public class DanceInfo : ScriptableObject
     public string CharacterName;
     
     [Header("Song Information")]
-    public AudioClip baseSong;
+    public AudioClip calmSong;
+    public AudioClip affectionateSong;
+    public AudioClip excitedSong;
     public int songBeatsPerMinute;
     
     [Header("Dance Action Information")]

@@ -24,7 +24,8 @@ public class ds_GameManager : MonoBehaviour
     {
         AudioListener.pause = true;
         ds_Service.GameManagerInGame = this;
-        danceSongAudioSource.clip = sceneDanceInformation.baseSong;
+        danceSongAudioSource.clip = sceneDanceInformation.calmSong;
+        
     }
 
     private void Start()
