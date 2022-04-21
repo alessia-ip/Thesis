@@ -73,12 +73,14 @@ public class PlayerOptionsSelections : MonoBehaviour
 
     void playerBow()
     {
+        playerAnims.SetTrigger("Bow");
         Invoke(nameof(npcBow), 1f);
     }
 
     void npcBow()
     {
-        Invoke(nameof(LoadScene), 1f);
+        npcAnims.SetTrigger("Bow");
+        Invoke(nameof(LoadScene), 2f);
     }
 
     void LoadScene()
