@@ -23,7 +23,7 @@ public class ds_PlayerCharacterAnimations : MonoBehaviour
 
         var inputOne = ds_Service.InputRecords.playerButtonInputs[0];
         var inputTwo = ds_Service.InputRecords.playerButtonInputs[1];
-        var playerMove = new PlayersDanceActions();
+        var playerMove = missAction;
         
         if (inputOne == 10 || inputTwo == 10)
         {
