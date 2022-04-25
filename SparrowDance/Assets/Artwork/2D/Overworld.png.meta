@@ -268,11 +268,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork 40_7
+      name: GrassONeBlade
       rect:
         serializedVersion: 2
         x: 1456
-        y: 1881
+        y: 1878
         width: 23
         height: 29
       alignment: 7
@@ -289,7 +289,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork 40_8
+      name: GrassThreeBlade
       rect:
         serializedVersion: 2
         x: 1511
@@ -709,7 +709,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork 40_59
+      name: PetalTwo
       rect:
         serializedVersion: 2
         x: 942
@@ -751,7 +751,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork 40_63
+      name: PetalOne
       rect:
         serializedVersion: 2
         x: 1031
@@ -1011,7 +1011,7 @@ TextureImporter:
         width: 181
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1032,7 +1032,7 @@ TextureImporter:
         width: 248
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
