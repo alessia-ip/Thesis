@@ -394,6 +394,61 @@
                     "action": "Think",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "01690c34-b675-4c36-8ee6-f1af77f1c97a",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "e9d30735-2117-49fa-95dc-945186307707",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "bc64acb2-c1d9-4a74-bdf2-3ee76bfaffae",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "ad68d8f4-708a-4dc2-9648-08420c70fbfb",
+                    "path": "<Joystick>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "ed185c8f-0c88-4e61-906b-babe8d0a3a92",
+                    "path": "<Joystick>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         },
@@ -402,7 +457,7 @@
             "id": "9a5d1991-5aa8-467d-aa58-385a21b3b6ae",
             "actions": [
                 {
-                    "name": "Navigate",
+                    "name": "Nav",
                     "type": "Button",
                     "id": "c19e31d3-4376-45e5-8cdd-5abf8c27f0f4",
                     "expectedControlType": "Button",
@@ -410,7 +465,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Spontaneous",
+                    "name": "TSpontaneous",
                     "type": "Button",
                     "id": "95ab0945-c61a-4b4b-9f6a-e71432c2508a",
                     "expectedControlType": "Button",
@@ -418,7 +473,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Calm",
+                    "name": "TCalm",
                     "type": "Button",
                     "id": "42ba45b4-80ca-4788-b524-7910113d670b",
                     "expectedControlType": "Button",
@@ -426,7 +481,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Passionate",
+                    "name": "TPassionate",
                     "type": "Button",
                     "id": "e638182a-18f5-4aa5-8f21-8b227d5c87e1",
                     "expectedControlType": "Button",
@@ -434,7 +489,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Encouraging",
+                    "name": "TEncouraging",
                     "type": "Button",
                     "id": "51502172-ce9f-41f6-a1de-bb3f808d8284",
                     "expectedControlType": "Button",
@@ -450,7 +505,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Spontaneous",
+                    "action": "TSpontaneous",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -461,7 +516,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Spontaneous",
+                    "action": "TSpontaneous",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb130c9b-c562-4967-a8c3-0dda114916df",
+                    "path": "<DualShockGamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TSpontaneous",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9232e277-7efc-4db0-b4ba-ad28a10c5d40",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TSpontaneous",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d37327f2-1216-454b-9421-da4747215833",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TSpontaneous",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -472,7 +560,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Calm",
+                    "action": "TCalm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -483,7 +571,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Calm",
+                    "action": "TCalm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6e18e98d-b2fe-4a2e-aba1-1fc5a542ae3e",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TCalm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -494,7 +593,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Passionate",
+                    "action": "TPassionate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -505,7 +604,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Passionate",
+                    "action": "TPassionate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bebe2cc7-b4d5-42b3-aa44-e74c5bb7ab3e",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TPassionate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -516,7 +626,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Encouraging",
+                    "action": "TEncouraging",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -527,7 +637,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Encouraging",
+                    "action": "TEncouraging",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cb23c258-e06a-482e-844c-d363c0659eba",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TEncouraging",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -538,7 +659,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -549,7 +670,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -560,7 +681,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -571,7 +692,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -582,7 +703,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -593,7 +714,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -604,7 +725,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -615,7 +736,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -626,7 +747,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -637,7 +758,62 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Navigate",
+                    "action": "Nav",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "38ab0f90-b182-4c60-baff-44ba62a94858",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Nav",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "128cd355-5473-42b9-98d2-a16f966037af",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Nav",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "11b91557-d57c-4ba8-b068-566d3fb6ed2a",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Nav",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "2bbfa7bb-af61-4bc9-9a9a-9a17c53060ed",
+                    "path": "<Joystick>/stick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Nav",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "bd77a19c-bec3-48a0-858f-401c1c8b0522",
+                    "path": "<Joystick>/stick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
