@@ -5931,6 +5931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb5ecd2a99af48d49d85d4b8ab8e45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  danceInfoReset: {fileID: 0}
 --- !u!4 &1835238771
 Transform:
   m_ObjectHideFlags: 0
