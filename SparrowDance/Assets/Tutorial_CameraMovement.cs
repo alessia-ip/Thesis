@@ -45,8 +45,8 @@ public class Tutorial_CameraMovement : MonoBehaviour
 
             if (newDir == -1 && currentState.StateNumber == 1) return; //we don't want to go before the first state
             if (newDir == 1 && currentState.StateNumber == 4) return; //we don't want to go past the last state either
-            if (newDir == 1 && currentState.StateNumber == 2 && stepsCompleted.revealedEmotions) return; //we don't want to advance past the tutorial steps!
-            if (newDir == 1 && currentState.StateNumber == 3 && stepsCompleted.triedACombo) return; //we don't want to advance past the tutorial steps!
+            if (newDir == 1 && currentState.StateNumber == 2 && !stepsCompleted.revealedEmotions) return; //we don't want to advance past the tutorial steps!
+            if (newDir == 1 && currentState.StateNumber == 3 && !stepsCompleted.triedACombo) return; //we don't want to advance past the tutorial steps!
 
             currentState.StateNumber = currentState.StateNumber + newDir;
             cameraInMotion = true;
@@ -59,10 +59,10 @@ public class Tutorial_CameraMovement : MonoBehaviour
         var NewPos = Vector3.Lerp(
             cam.transform.position,
             cameraPositions[currentState.StateNumber].position,
-            0.01f);
+            0.05f);
         cam.transform.position = NewPos;
         if (Vector3.Distance(cam.transform.position,
-            cameraPositions[currentState.StateNumber].position) < 0.1f)
+            cameraPositions[currentState.StateNumber].position) < 0.5f)
         {
             cameraInMotion = false;
             cam.transform.position = cameraPositions[currentState.StateNumber].position;
