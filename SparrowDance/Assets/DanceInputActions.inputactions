@@ -38,6 +38,22 @@
                     "interactions": ""
                 },
                 {
+                    "name": "Mirror",
+                    "type": "Button",
+                    "id": "7fd7f9a9-c516-4413-8531-28e2f188ab49",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Reverse",
+                    "type": "Button",
+                    "id": "fb13d9c2-e9a9-4e98-b4b3-b62d778a3f85",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Navigate",
                     "type": "Value",
                     "id": "20141802-8a0d-46ed-901b-33d13860c5d4",
@@ -79,6 +95,17 @@
                 },
                 {
                     "name": "",
+                    "id": "1fc85ab1-5a92-40f4-9263-69f95854797c",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spontaneous",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c958e04e-e407-494f-831e-64cb592d49d6",
                     "path": "<Keyboard>/w",
                     "interactions": "",
@@ -92,6 +119,17 @@
                     "name": "",
                     "id": "e14ecb05-0016-454a-b22a-cc639bba9a53",
                     "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Calm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "82e5931e-16bf-46de-b7d7-6638061b2772",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/trigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -123,6 +161,17 @@
                 },
                 {
                     "name": "",
+                    "id": "3df9e29c-cb89-4647-91d0-7bcb23269363",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Passionate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c130e4e6-9cc9-4c56-aa75-72dabad219b5",
                     "path": "<Keyboard>/q",
                     "interactions": "",
@@ -136,6 +185,17 @@
                     "name": "",
                     "id": "9b968731-f593-4e56-8a54-39c7276a1692",
                     "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Encouraging",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "da9a9f1b-a70a-4d09-95a4-808b6275f94e",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -228,6 +288,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "SelectMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f268d676-d03f-4976-aef8-c05ab426417f",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mirror",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "45ead0a4-9f82-4fbc-beb7-329fc5ed778e",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mirror",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1af1a156-e897-4614-b263-732fa7933985",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reverse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8da13104-88d1-4fb7-94cc-f226e182e6e1",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reverse",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -514,6 +618,14 @@
                     "name": "TEncouraging",
                     "type": "Button",
                     "id": "51502172-ce9f-41f6-a1de-bb3f808d8284",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Advance",
+                    "type": "Button",
+                    "id": "9e89347f-648c-44b6-a5c1-473faa97cbfd",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -838,6 +950,17 @@
                     "action": "Nav",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "e4856849-f4e9-482c-bf04-dc396066c145",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Advance",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

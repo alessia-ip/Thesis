@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Overworld/IntroScene.unity
     guid: a5368d7d9877246af9868f5a13aea2b1
   - enabled: 1
-    path: Assets/Scenes/Dance/TutorialScene.unity
-    guid: afa772f3234344e25a170a341be6fcf3
+    path: Assets/Scenes/Dance/TutorialV2.unity
+    guid: 26dc16ef4cbaa47cd89cfb8f3b64ee0d
   - enabled: 1
     path: Assets/Scenes/Dance/AlexDance.unity
     guid: f2bde65ff747a4d4785448d3cdddd106
+  - enabled: 0
+    path: Assets/Scenes/Dance/TutorialScene.unity
+    guid: afa772f3234344e25a170a341be6fcf3
   - enabled: 0
     path: Assets/Scenes/Dance/Demo.unity
     guid: 6eb7ae52bfc864a2daff6db113ba1f7c
