@@ -6,6 +6,11 @@ public class ds_playerDirectionDetermination : MonoBehaviour
 {
 
     public bool isWith;
+
+    public void Awake()
+    {
+        ds_Service.DirectionDetermination = this;
+    }
     
     public void LeftOrRight(bool _isWith)
     {

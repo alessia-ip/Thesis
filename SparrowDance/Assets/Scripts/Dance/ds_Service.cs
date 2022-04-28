@@ -22,6 +22,8 @@ public static class ds_Service
     public static ds_particleManager ParticlesInScene;
     public static StateChange StateChangeInScene;
     public static ds_VibeMoveCloser VibeMoveCloserInGame;
+    public static ds_playerDirectionDetermination DirectionDetermination;
+    
     
     public static void Initialize()
     {

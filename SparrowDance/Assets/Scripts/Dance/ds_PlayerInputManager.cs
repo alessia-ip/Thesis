@@ -12,14 +12,15 @@ public class ds_PlayerInputManager : MonoBehaviour
     void Start()
     {
         //dance phase inputs
-        InputActions.actions["Spontaneous"].performed += SpontaneousInput;
-        InputActions.actions["Calm"].performed += CalmInput;
-        InputActions.actions["Passionate"].performed += PassionateInput;
-        InputActions.actions["Encouraging"].performed += EncouragingInput;
+        InputActions.currentActionMap.actions[0].performed += SpontaneousInput;
+        InputActions.currentActionMap.actions[1].performed += CalmInput;
+        InputActions.currentActionMap.actions[2].performed += PassionateInput;
+        InputActions.currentActionMap.actions[3].performed += EncouragingInput;
         
         
         //planning phase inputs not handled by UI
-        InputActions.actions["Spontaneous"].performed += StartDancePhase;
+        InputActions.currentActionMap.actions[4].performed += ReverseStart;
+        InputActions.currentActionMap.actions[5].performed += MirrorStart;
         
         
     }
@@ -58,10 +59,27 @@ public class ds_PlayerInputManager : MonoBehaviour
 
     #region PlanningPhaseInputs
 
-    private void StartDancePhase(InputAction.CallbackContext obj)
+    private void ReverseStart(InputAction.CallbackContext obj)
     {
         if (ds_Service.GameManagerInGame.currentGameState != ds_GameManager.GameState.planning) return;
         if (ds_Service.GameManagerInGame.isInMenu) return;
+
+        Debug.Log("reverse");
+        
+        ds_Service.DirectionDetermination.isWith = false;
+        
+        ds_Service.EventManagerInGame._StartCountdownSection();
+    }
+    
+    private void MirrorStart(InputAction.CallbackContext obj)
+    {
+        if (ds_Service.GameManagerInGame.currentGameState != ds_GameManager.GameState.planning) return;
+        if (ds_Service.GameManagerInGame.isInMenu) return;
+        
+        Debug.Log("Mirror");
+        
+        ds_Service.DirectionDetermination.isWith = true;
+        
         ds_Service.EventManagerInGame._StartCountdownSection();
     }
 
