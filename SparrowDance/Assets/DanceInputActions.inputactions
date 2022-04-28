@@ -386,8 +386,30 @@
                 },
                 {
                     "name": "",
+                    "id": "161022ba-4218-4bd2-b5ba-4da2b7f37b0d",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dance",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b0a41631-6aad-46cc-8a48-7297c4463e57",
                     "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Think",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "74eac6cf-e01f-4bd9-a286-d97f530196ab",
+                    "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button6",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
