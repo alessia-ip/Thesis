@@ -14354,9 +14354,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'RT
-
-'
+  m_text: RB
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 33b8422a195e64b6987e616d4897b0d8, type: 2}
   m_sharedMaterial: {fileID: 3761022397144246574, guid: 33b8422a195e64b6987e616d4897b0d8, type: 2}
