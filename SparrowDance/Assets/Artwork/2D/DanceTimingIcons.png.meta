@@ -1,0 +1,699 @@
+fileFormatVersion: 2
+guid: 70455f519a6034411af6f03fd980a5f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9086859598617962393
+    second: Rope
+  - first:
+      213: -4441403281943973156
+    second: ThinRope
+  - first:
+      213: 8868830840587778270
+    second: Curtain
+  - first:
+      213: -8369046040071365214
+    second: DanceTimingIcons_3
+  - first:
+      213: 3701091660669671109
+    second: YellowTriangleFlag
+  - first:
+      213: 3178050180032817229
+    second: RedTriangleFlag
+  - first:
+      213: 3523077347082056358
+    second: BegieFlag
+  - first:
+      213: -3120665322665940379
+    second: DanceTimingIcons_7
+  - first:
+      213: 2939415116487967186
+    second: DanceTimingIcons_8
+  - first:
+      213: -6884196337624951817
+    second: DanceTimingIcons_9
+  - first:
+      213: -416406739187308728
+    second: DanceTimingIcons_10
+  - first:
+      213: 1112276187332891322
+    second: PurpleFlower
+  - first:
+      213: -3972479750412020270
+    second: DanceTimingIcons_13
+  - first:
+      213: 5077534780386011591
+    second: DanceTimingIcons_14
+  - first:
+      213: 9014720518159733468
+    second: Leaves
+  - first:
+      213: -80185602038576609
+    second: DanceTimingIcons_16
+  - first:
+      213: 911530036268052017
+    second: DanceTimingIcons_17
+  - first:
+      213: 5820841855421691230
+    second: BlueTriangleFlag
+  - first:
+      213: 881286607560970830
+    second: MauveFlag
+  - first:
+      213: -189116671880432349
+    second: DanceTimingIcons_20
+  - first:
+      213: 1337428061740299826
+    second: DanceTimingIcons_21
+  - first:
+      213: 3980225034751131845
+    second: DanceTimingIcons_22
+  - first:
+      213: -1066352045359238695
+    second: DanceTimingIcons_23
+  - first:
+      213: 8186832545213707689
+    second: PinkFlower
+  - first:
+      213: -8390880177411498828
+    second: DanceTimingIcons_25
+  - first:
+      213: 4610899499971601589
+    second: GreyLantern
+  - first:
+      213: -2450762815464386275
+    second: BlueLantern
+  - first:
+      213: 5565320246327228990
+    second: RedLantern
+  - first:
+      213: -6649536230776264624
+    second: DanceTimingIcons_29
+  - first:
+      213: -2006362875926135819
+    second: DanceTimingIcons_30
+  - first:
+      213: 5177313074274387195
+    second: DanceTimingIcons_31
+  - first:
+      213: 8267168763175084893
+    second: DanceTimingIcons_32
+  - first:
+      213: 3954648239945586914
+    second: DanceTimingIcons_33
+  - first:
+      213: -5349701287051414281
+    second: DanceTimingIcons_34
+  - first:
+      213: -6105457104555458920
+    second: DanceTimingIcons_35
+  - first:
+      213: -2810396905376984966
+    second: DanceTimingIcons_36
+  - first:
+      213: 5517306597493898129
+    second: YellowLantern
+  - first:
+      213: -5187682901387295873
+    second: GreenLantern
+  - first:
+      213: -5395931976260096370
+    second: LeftLightsUnlit
+  - first:
+      213: 4108049732774304560
+    second: RightLightsUnlit
+  - first:
+      213: -1746080139881635286
+    second: LeftLightsLit
+  - first:
+      213: 6273125334810359351
+    second: RightLightsLit
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rope
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2085
+        width: 1184
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768178cd65df4e180800000000000000
+      internalID: -9086859598617962393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Curtain
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1435
+        width: 191
+        height: 584
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8734219aa641b70800000000000000
+      internalID: 8868830840587778270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowTriangleFlag
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1869
+        width: 100
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c65063914bec5330800000000000000
+      internalID: 3701091660669671109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedTriangleFlag
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1867
+        width: 100
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48e83bfcc3ba1c20800000000000000
+      internalID: 3178050180032817229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BegieFlag
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1874
+        width: 78
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a23d0d5e2c74e030800000000000000
+      internalID: 3523077347082056358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PurpleFlower
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1804
+        width: 111
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab25a1e9c499f6f00800000000000000
+      internalID: 1112276187332891322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Leaves
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1813
+        width: 97
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2165a9c88ba1d70800000000000000
+      internalID: 9014720518159733468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueTriangleFlag
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1728
+        width: 96
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55b22ec3d8c7c050800000000000000
+      internalID: 5820841855421691230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MauveFlag
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 1732
+        width: 72
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e421bf41085fa3c00800000000000000
+      internalID: 881286607560970830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PinkFlower
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1654
+        width: 109
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5f11df2d87d9170800000000000000
+      internalID: 8186832545213707689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyLantern
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1459
+        width: 109
+        height: 183
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b465d66aa43dff30800000000000000
+      internalID: 4610899499971601589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueLantern
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1461
+        width: 109
+        height: 183
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11528b34342dfdd0800000000000000
+      internalID: -2450762815464386275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedLantern
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1459
+        width: 109
+        height: 183
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3abf97174dfb3d40800000000000000
+      internalID: 5565320246327228990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DanceTimingIcons_33
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 1512
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e894912f9bb1e630800000000000000
+      internalID: 3954648239945586914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YellowLantern
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1227
+        width: 109
+        height: 183
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bfa845e19619c40800000000000000
+      internalID: 5517306597493898129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenLantern
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1227
+        width: 109
+        height: 183
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73417ff2e5a108b0800000000000000
+      internalID: -5187682901387295873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeftLightsUnlit
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 947
+        width: 514
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e68dad47ccd15b0800000000000000
+      internalID: -5395931976260096370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RightLightsUnlit
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 956
+        width: 530
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b96a17779b20930800000000000000
+      internalID: 4108049732774304560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeftLightsLit
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 647
+        width: 514
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22adf82d5da4c7e0800000000000000
+      internalID: -1746080139881635286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RightLightsLit
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 658
+        width: 531
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736ffdc614e9e0750800000000000000
+      internalID: 6273125334810359351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThinRope
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 257
+        width: 1133
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2b9732f37fc52c0800000000000000
+      internalID: -4441403281943973156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
