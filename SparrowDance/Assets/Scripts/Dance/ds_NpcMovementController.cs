@@ -11,6 +11,7 @@ public class ds_NpcMovementController : MonoBehaviour
     public GameObject npc;
     
     bool firstMove = true;
+    bool lastMove = false;
     
     public enum RowNum
     {
@@ -44,10 +45,22 @@ public class ds_NpcMovementController : MonoBehaviour
     void resetMovementStart()
     {
         firstMove = true;
+        lastMove = false;
     }
     
    void  moveToTheBeat()
    {
+       
+       if (ds_Service.StateChangeInScene.currentBeats == ds_Service.StateChangeInScene.beatsToChangeAt - 4)
+       {
+           lastMove = true;
+       }
+        
+       if (lastMove)
+       {
+           return;
+       }
+       
        if (ds_Service.VibeMoveCloserInGame.MoveInwardsN && firstMove)
        {
            ds_Service.VibeMoveCloserInGame.MoveInwardsN = false;

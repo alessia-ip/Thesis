@@ -7,7 +7,9 @@ public class ds_GameManager : MonoBehaviour
 {
 
     /*public DanceInformation sceneDanceInformation;*/
-    public AudioSource danceSongAudioSource;
+    public AudioSource danceSongAudioSourceCalm;
+    public AudioSource danceSongAudioSourceAffectionate;
+    public AudioSource danceSongAudioSourceExcited;
     public DanceInfo sceneDanceInformation;
 
     public enum GameState
@@ -24,7 +26,9 @@ public class ds_GameManager : MonoBehaviour
     {
         AudioListener.pause = true;
         ds_Service.GameManagerInGame = this;
-        danceSongAudioSource.clip = sceneDanceInformation.calmSong;
+        danceSongAudioSourceCalm.clip = sceneDanceInformation.calmSong;
+        danceSongAudioSourceAffectionate.clip = sceneDanceInformation.affectionateSong;
+        danceSongAudioSourceExcited.clip = sceneDanceInformation.excitedSong;
         
     }
 
