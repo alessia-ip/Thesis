@@ -2906,7 +2906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timingManager: {fileID: 907751203}
-  beatToTriggerOn: 2
+  beatToTriggerOn: 1
 --- !u!1 &388603319
 GameObject:
   m_ObjectHideFlags: 0
@@ -7761,7 +7761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timingManager: {fileID: 907751203}
-  beatToTriggerOn: 1
+  beatToTriggerOn: 2
 --- !u!1 &963209086
 GameObject:
   m_ObjectHideFlags: 0
@@ -8513,7 +8513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timingManager: {fileID: 907751203}
-  beatToTriggerOn: 2
+  beatToTriggerOn: 1
 --- !u!1 &1015310377
 GameObject:
   m_ObjectHideFlags: 0
@@ -9242,7 +9242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timingManager: {fileID: 907751203}
-  beatToTriggerOn: 1
+  beatToTriggerOn: 2
 --- !u!1 &1113810403
 GameObject:
   m_ObjectHideFlags: 0
