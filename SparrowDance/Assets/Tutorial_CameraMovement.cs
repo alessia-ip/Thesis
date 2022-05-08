@@ -31,6 +31,7 @@ public class Tutorial_CameraMovement : MonoBehaviour
         else
         {
             Vector2 vec = InputActions.currentActionMap.actions[0].ReadValue<Vector2>();
+            Debug.Log(vec);
             int newDir = 0;
             
             if (vec.y == 0) return;

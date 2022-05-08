@@ -21,10 +21,6 @@ public class ds_TimingManager : MonoBehaviour
     public float secondsToNextBeat; //this is the seconds left between the current beat and the next beat of the song
     
     
-    //remove this UI and int when bug is solved
-    public Text FourByFourDebug;
-    private int countExecutionNumber = 0;
-    
     
     // Start is called before the first frame update
     void Awake()
@@ -64,8 +60,6 @@ public class ds_TimingManager : MonoBehaviour
     public void Update()
     {
         UpdateSongTime();
-        
-        
     }
 
     void setSecondsToZero()
@@ -75,10 +69,8 @@ public class ds_TimingManager : MonoBehaviour
     
     public void getSecondsToNextBeat()
     {
+        //this is the math for the amount of time between this beat and the next
         secondsToNextBeat =  (songPositionInBeats + 1) * secondsPerBeat - currentSongPosition;
-        /*var changeTime = currentSongPosition - prevDspSongTime;
-        secondsToNextBeat = secondsToNextBeat + changeTime;
-        Debug.Log("Seconds: " + secondsToNextBeat);*/
     }
 
     public void UpdateSongTime()
@@ -98,36 +90,28 @@ public class ds_TimingManager : MonoBehaviour
         
         //we want beat 1 to be first, not beat 0! So we always round up
         currentBeatNumber = Mathf.CeilToInt(songPositionInBeats);
-        
-
-        //This is the OLD way I was doing it
-        /*//if the beat hasn't changed we don't need to do this
-        //and we escape the function
-        if(currentBeatNumber == previousBeatNumber) return;*/
-
-        //otherwise we update the previous beat number
-        /*previousBeatNumber = currentBeatNumber;
-        
-        UpdateBeatCount();*/
 
     }
 
     void TryTriggerBeat()
     {
-        
+        //invoke the beat at the time of the upcoming beat, not immediately
+        //always triggered one beat before, EXCEPT for beat one
         Invoke(nameof(UpdateBeatCount), secondsToNextBeat);
-        //secondsToNextBeat = 0.01f;
+       
     }
 
     public void UpdateBeatCount()
     {
 
+        //determine how many seconds it is between this beat and the next
         getSecondsToNextBeat();
         
+        //Check on the state of the game
         if (ds_Service.GameManagerInGame.currentGameState != ds_GameManager.GameState.dancing) return;
-        
-        //previousBeatNumber = currentBeatNumber;
 
+        //if the four by four beat his 5, we want it to go back to 1
+        //otherwise, we want to increase the counter
         if (fourByFourBeatNumber < 4)
         {
             fourByFourBeatNumber++;
@@ -135,13 +119,10 @@ public class ds_TimingManager : MonoBehaviour
         {
             fourByFourBeatNumber = 1;
         }
-
-        FourByFourDebug.text = fourByFourBeatNumber.ToString();
         
+        //Trigger the beat in our event manager
         ds_Service.EventManagerInGame._TriggerBeat();
-
-        countExecutionNumber++;
-        Debug.Log(countExecutionNumber);
+        
     }
     
 }
