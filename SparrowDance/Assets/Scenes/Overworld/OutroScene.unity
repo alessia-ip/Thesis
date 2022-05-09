@@ -9823,6 +9823,7 @@ GameObject:
   - component: {fileID: 1141571801}
   - component: {fileID: 1141571804}
   - component: {fileID: 1141571803}
+  - component: {fileID: 1141571805}
   m_Layer: 0
   m_Name: DirectlyInFront
   m_TagString: Front
@@ -9911,6 +9912,23 @@ MonoBehaviour:
   CanGetOldInfo: 0
   CanGetNewInfo: 0
   CanGiveItem: 0
+--- !u!114 &1141571805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141571798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae2049eb3e184df6936f14f9bf2ff3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Dance: {fileID: 11400000, guid: ec41f007d1eb7417a98a57b20bdd9f1b, type: 2}
+  _ChangeIcon: {fileID: 1141571803}
+  S: {fileID: -6313249332163348590, guid: 01743828173d24067b96f10b2926dc97, type: 3}
+  C: {fileID: -1121623286173824773, guid: 01743828173d24067b96f10b2926dc97, type: 3}
+  P: {fileID: -2902933250046389038, guid: 01743828173d24067b96f10b2926dc97, type: 3}
 --- !u!1 &1174672056
 GameObject:
   m_ObjectHideFlags: 0
@@ -13066,7 +13084,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673161607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.16, y: 0, z: 11.22}
+  m_LocalPosition: {x: -3.92, y: 0, z: 11.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7805842542923539871}
