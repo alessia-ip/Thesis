@@ -13,6 +13,10 @@ public class SplitscreenManager : MonoBehaviour
     public Color CalmCol;
     public Color PassionateCol;
     public Color EncourageCol;
+
+    public int playerAction1;
+    public int playerAction2;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -47,10 +51,11 @@ public class SplitscreenManager : MonoBehaviour
     {
         splitscreen.SetActive(false);
     }
+    
 
     private void updateCameraBackgroundColor()
     {
-        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 3) return;
+        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 4) return;
         
         var npcAction = ds_Service.NpcActionsInLevel.currentlySelectedAction;
 
@@ -72,27 +77,44 @@ public class SplitscreenManager : MonoBehaviour
                 NpcCamera.backgroundColor = Color.white;
                 break;
         }
+        
+        playerAction1 = ds_Service.InputRecords.playerButtonInputs[0];
+        playerAction2 = ds_Service.InputRecords.playerButtonInputs[1];
 
-        var playerAction = ds_Service.InputRecords.playerButtonInputs[0];
-        
-        
-        switch (playerAction)
+        switch (playerAction1)
         {
             case 0:
                 PlayerCamera.backgroundColor = SpontaneousCol;
+                check2();
                 break;
             case 1:
                 PlayerCamera.backgroundColor = CalmCol;
+                check2();
                 break;
             case 2:
                 PlayerCamera.backgroundColor = PassionateCol;
+                check2();
                 break;
             case 3:
                 PlayerCamera.backgroundColor = EncourageCol;
+                check2();
                 break;
             default:
                 PlayerCamera.backgroundColor = Color.white;
                 break;
         }
+
     }
+
+    void check2()
+    {
+        if (playerAction2 != 0 &&
+            playerAction2 != 1 &&
+            playerAction2 != 2 &&
+            playerAction2 != 3)
+        {
+            PlayerCamera.backgroundColor = Color.white;
+        }
+    }
+    
 }
