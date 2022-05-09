@@ -17,6 +17,7 @@ public class ds_PlayerCharacterAnimations : MonoBehaviour
         ds_Service.EventManagerInGame._endSong += ending;
     }
 
+    public ds_PlayerMovementController playerMov;
 
     void triggerAnimations()
     {
@@ -129,7 +130,16 @@ public class ds_PlayerCharacterAnimations : MonoBehaviour
 
     private void ending()
     {
-        npcAnimator.SetTrigger("Bow");
-        playerAnimator.SetTrigger("Bow");
+        if (ds_Service.VibeMoveCloserInGame.thresholdTwoCrossed && 
+            playerMov.currentDanceRow == ds_PlayerMovementController.RowNum.front)
+        {
+            npcAnimator.SetTrigger("Circle");
+            playerAnimator.SetTrigger("Circle");
+        }
+        else
+        {
+            npcAnimator.SetTrigger("Bow");
+            playerAnimator.SetTrigger("Bow");
+        }
     }
 }
