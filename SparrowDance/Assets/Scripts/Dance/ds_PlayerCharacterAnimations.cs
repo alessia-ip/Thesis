@@ -29,6 +29,7 @@ public class ds_PlayerCharacterAnimations : MonoBehaviour
         if (inputOne == 10 || inputTwo == 10)
         {
             playerMove = missAction;
+            playerAnimator.SetTrigger("Failure");
         }
         else
         {
@@ -66,7 +67,7 @@ public class ds_PlayerCharacterAnimations : MonoBehaviour
         else if (playerMove.actionName.ToLower().Contains("beckon"))
         {
             playerAnimator.SetTrigger("Beckon");
-        }
+        } 
 
         var npcMove = ds_Service.NpcActionsInLevel.currentlySelectedAction;
         
