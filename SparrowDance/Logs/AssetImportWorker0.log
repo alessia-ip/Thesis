@@ -4261,3 +4261,195 @@ Received Import Request.
 Start importing Assets/Animations/DanceAnimations/MainChararcter/Alex.controller using Guid(7ac5596a6372c401ba86de62deb37b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41026f07b42263ffc01d08bde72dd54d') in 0.038911 seconds 
   Import took 0.046090 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 150.690175 seconds.
+  path: Assets/ScriptableObjects/BestFriend/__DanceInfo.asset
+  artifactKey: Guid(ec41f007d1eb7417a98a57b20bdd9f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/__DanceInfo.asset using Guid(ec41f007d1eb7417a98a57b20bdd9f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19fa34d768f508f9f061a108ad6863c') in 0.045876 seconds 
+  Import took 0.058041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.196469 seconds.
+  path: Assets/Prefabs/BeatCanvas.prefab
+  artifactKey: Guid(d8c3e78c8bf164316b8e0697f065e80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BeatCanvas.prefab using Guid(d8c3e78c8bf164316b8e0697f065e80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa4ff442181fd4b3007f7830c2188ff8') in 0.119971 seconds 
+  Import took 0.126595 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Prefabs/SplitscreenPrefab.prefab
+  artifactKey: Guid(866b0a441d210475ca56d8e4b3aa211a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SplitscreenPrefab.prefab using Guid(866b0a441d210475ca56d8e4b3aa211a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94bbf36069fc8603034429c650b82d4a') in 0.200956 seconds 
+  Import took 0.206529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Prefabs/BeatCanvas.prefab
+  artifactKey: Guid(d8c3e78c8bf164316b8e0697f065e80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BeatCanvas.prefab using Guid(d8c3e78c8bf164316b8e0697f065e80e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa4ff442181fd4b3007f7830c2188ff8') in 0.009644 seconds 
+  Import took 0.015486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Prefabs/SplitscreenPrefab.prefab
+  artifactKey: Guid(866b0a441d210475ca56d8e4b3aa211a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SplitscreenPrefab.prefab using Guid(866b0a441d210475ca56d8e4b3aa211a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94bbf36069fc8603034429c650b82d4a') in 0.028472 seconds 
+  Import took 0.034734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.779351 seconds.
+  path: Assets/ScriptableObjects/BestFriend/__DanceInfo.asset
+  artifactKey: Guid(ec41f007d1eb7417a98a57b20bdd9f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/__DanceInfo.asset using Guid(ec41f007d1eb7417a98a57b20bdd9f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed72e0e75de7d30020d54e1a24106cb1') in 0.015177 seconds 
+  Import took 0.036342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 245.466774 seconds.
+  path: Assets/ScriptableObjects/BestFriend/C_FootTap.asset
+  artifactKey: Guid(0a169bf56a16c4ed6b1ba7deda0a6e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/C_FootTap.asset using Guid(0a169bf56a16c4ed6b1ba7deda0a6e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4387b09d087996d8105527f651756d1b') in 0.018774 seconds 
+  Import took 0.025002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011666 seconds.
+  path: Assets/ScriptableObjects/BestFriend/C_FootTap.asset
+  artifactKey: Guid(0a169bf56a16c4ed6b1ba7deda0a6e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/C_FootTap.asset using Guid(0a169bf56a16c4ed6b1ba7deda0a6e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4387b09d087996d8105527f651756d1b') in 0.005437 seconds 
+  Import took 0.010895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/ScriptableObjects/BestFriend/E_Point.asset
+  artifactKey: Guid(86387fd5f5b6b4dffbedb6e82b9d6742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/E_Point.asset using Guid(86387fd5f5b6b4dffbedb6e82b9d6742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370858b6035cf645097114f274897b15') in 0.004338 seconds 
+  Import took 0.009470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/ScriptableObjects/BestFriend/S_Twirl.asset
+  artifactKey: Guid(f36e98a8d8355411a83412cbc04e385c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/S_Twirl.asset using Guid(f36e98a8d8355411a83412cbc04e385c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e61db6c6d61d45b5dd6e91ea53c9b9') in 0.004463 seconds 
+  Import took 0.009736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/ScriptableObjects/BestFriend/E_Sway.asset
+  artifactKey: Guid(7cda75fde50334e719dd66a74ce58754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/E_Sway.asset using Guid(7cda75fde50334e719dd66a74ce58754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af9da889892e18c8973220ed3512057') in 0.004124 seconds 
+  Import took 0.009391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/ScriptableObjects/BestFriend/C_Wavey.asset
+  artifactKey: Guid(6d7fd3b66b2f64697bd24c59dcfeaa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/C_Wavey.asset using Guid(6d7fd3b66b2f64697bd24c59dcfeaa51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7194474606490488169344b27ef62d') in 0.003773 seconds 
+  Import took 0.009183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/ScriptableObjects/BestFriend/S_Wiggle.asset
+  artifactKey: Guid(0f3405e4f09274d8ea57c2493e3d6b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/S_Wiggle.asset using Guid(0f3405e4f09274d8ea57c2493e3d6b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2f85928a0963b577a5c33760a6af53') in 0.005049 seconds 
+  Import took 0.010287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/ScriptableObjects/BestFriend/E_Beckon.asset
+  artifactKey: Guid(c804a63b5ed234b3b8393ca43b83d03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/E_Beckon.asset using Guid(c804a63b5ed234b3b8393ca43b83d03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad808a10ad1ba041d739599477c4d5bc') in 0.004575 seconds 
+  Import took 0.009591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/ScriptableObjects/BestFriend/E_Pose.asset
+  artifactKey: Guid(b775554803efb46b3b745f890076a82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/E_Pose.asset using Guid(b775554803efb46b3b745f890076a82d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99baaa5d06b1ef8c861df52b404857f') in 0.004359 seconds 
+  Import took 0.009748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/ScriptableObjects/BestFriend/S_Point.asset
+  artifactKey: Guid(e85a0b38969604aee86ef218bcf51780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/S_Point.asset using Guid(e85a0b38969604aee86ef218bcf51780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b5f2bee585e99a1d8747cdee442e3e') in 0.004877 seconds 
+  Import took 0.010444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/ScriptableObjects/BestFriend/C_Sway.asset
+  artifactKey: Guid(fc128d20779df455cb22614e0ed50de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/C_Sway.asset using Guid(fc128d20779df455cb22614e0ed50de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c62ff374c58c6e2b1ee21c7ea855df2') in 0.011625 seconds 
+  Import took 0.016832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/ScriptableObjects/BestFriend/P_Twirl.asset
+  artifactKey: Guid(6f33a910c825443c691214f5f8d489bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/P_Twirl.asset using Guid(6f33a910c825443c691214f5f8d489bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9975f81b27b00db19587b85fbbdd4640') in 0.004278 seconds 
+  Import took 0.008940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/ScriptableObjects/BestFriend/S_FootTap.asset
+  artifactKey: Guid(78f9d7f7221d54e729351709c051991a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/S_FootTap.asset using Guid(78f9d7f7221d54e729351709c051991a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd7db61842612c9634fad0fec87ca5d') in 0.003781 seconds 
+  Import took 0.008534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/ScriptableObjects/BestFriend/P_BlowKiss.asset
+  artifactKey: Guid(774e132c4ba11477ebc3c9375beda68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/P_BlowKiss.asset using Guid(774e132c4ba11477ebc3c9375beda68f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14b0ab1e0eada58d26f911a3a3fed97') in 0.003753 seconds 
+  Import took 0.009730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/ScriptableObjects/BestFriend/P_StretchLeg.asset
+  artifactKey: Guid(02d028f742ecb4f8589bacc9506164f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/P_StretchLeg.asset using Guid(02d028f742ecb4f8589bacc9506164f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f464c43d46a4c38ce9feced661df43') in 0.003798 seconds 
+  Import took 0.008937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/ScriptableObjects/BestFriend/C_StretchLeg.asset
+  artifactKey: Guid(bd631ad3f8f834509a88cee75276b144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/C_StretchLeg.asset using Guid(bd631ad3f8f834509a88cee75276b144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09f78095b1c2ecf342af941cf6ceb04') in 0.004529 seconds 
+  Import took 0.009901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/ScriptableObjects/BestFriend/P_Pose.asset
+  artifactKey: Guid(804de417fc0b4488aaf6641ba87645ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/P_Pose.asset using Guid(804de417fc0b4488aaf6641ba87645ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5900aef6978b6bb732c6a6898a9dc66b') in 0.003720 seconds 
+  Import took 0.008814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/ScriptableObjects/BestFriend/C_Sway.asset
+  artifactKey: Guid(fc128d20779df455cb22614e0ed50de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/BestFriend/C_Sway.asset using Guid(fc128d20779df455cb22614e0ed50de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c62ff374c58c6e2b1ee21c7ea855df2') in 0.003540 seconds 
+  Import took 0.008478 seconds .
+
