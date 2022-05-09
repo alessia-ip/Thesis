@@ -19,8 +19,8 @@ public class ds_TimingManager : MonoBehaviour
     public int fourByFourBeatNumber; //this is the current beat as a 4/4 (1,2,3,4)
 
     public float secondsToNextBeat; //this is the seconds left between the current beat and the next beat of the song
-    
-    
+
+    public int totalBeatsInSong;
     
     // Start is called before the first frame update
     void Awake()
@@ -70,7 +70,7 @@ public class ds_TimingManager : MonoBehaviour
     public void getSecondsToNextBeat()
     {
         //this is the math for the amount of time between this beat and the next
-        secondsToNextBeat =  (songPositionInBeats + 1) * secondsPerBeat - currentSongPosition;
+        secondsToNextBeat =  (songPositionInBeats + 1) * secondsPerBeat - currentSongPosition - 0.01f;
     }
 
     public void UpdateSongTime()
@@ -86,15 +86,15 @@ public class ds_TimingManager : MonoBehaviour
         songPositionInBeats = currentSongPosition / secondsPerBeat;
 
         //secondsToNextBeat =  (songPositionInBeats + 1) * secondsPerBeat - currentSongPosition;
-        getSecondsToNextBeat();
-        
-        //we want beat 1 to be first, not beat 0! So we always round up
-        currentBeatNumber = Mathf.CeilToInt(songPositionInBeats);
+   
+        /*//we want beat 1 to be first, not beat 0! So we always round up
+        currentBeatNumber = Mathf.CeilToInt(songPositionInBeats);*/
 
     }
 
     void TryTriggerBeat()
     {
+        
         //invoke the beat at the time of the upcoming beat, not immediately
         //always triggered one beat before, EXCEPT for beat one
         Invoke(nameof(UpdateBeatCount), secondsToNextBeat);
@@ -122,7 +122,7 @@ public class ds_TimingManager : MonoBehaviour
         
         //Trigger the beat in our event manager
         ds_Service.EventManagerInGame._TriggerBeat();
-        
+        currentBeatNumber++;
     }
     
 }

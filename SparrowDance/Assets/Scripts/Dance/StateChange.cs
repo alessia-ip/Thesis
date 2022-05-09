@@ -9,6 +9,7 @@ public class StateChange : MonoBehaviour
     public int currentBeats;
 
     public bool changeNeeded;
+    public bool endNeeded;
     
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class StateChange : MonoBehaviour
         resetBeat();
         ds_Service.EventManagerInGame._StartPlanningSection += resetBeat;
         ds_Service.EventManagerInGame._TriggerBeat += IncrementBeat;
+        ds_Service.EventManagerInGame._TriggerBeat += checkEndOfSong;
         ds_Service.StateChangeInScene = this;
     }
 
@@ -42,6 +44,27 @@ public class StateChange : MonoBehaviour
 
     public void changeMode()
     {
-        ds_Service.EventManagerInGame._StartPlanningSection();
+        if (endNeeded)
+        {
+            ds_Service.EventManagerInGame._endSong();
+            Debug.Log("end the song");
+        }
+        else
+        {
+            ds_Service.EventManagerInGame._StartPlanningSection();
+            
+        }
+        
     }
+
+    public void checkEndOfSong()
+    {
+        if (ds_Service.TimingManagerInGame.totalBeatsInSong - ds_Service.TimingManagerInGame.songPositionInBeats 
+            < beatsToChangeAt)
+        {
+            endNeeded = true;
+        }
+    }
+    
+    
 }

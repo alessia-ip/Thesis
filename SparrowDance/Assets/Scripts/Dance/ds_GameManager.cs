@@ -16,7 +16,8 @@ public class ds_GameManager : MonoBehaviour
     {
         planning,
         countdown,
-        dancing
+        dancing,
+        end
     }
 
     public GameState currentGameState = GameState.planning;

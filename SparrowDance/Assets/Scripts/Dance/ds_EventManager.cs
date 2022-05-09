@@ -19,6 +19,9 @@ public class ds_EventManager : MonoBehaviour
 
     public delegate void VibeMatch();
     public VibeMatch VibeIsMatched;
+    
+    public delegate void EndOfSong();
+    public EndOfSong _endSong;
 
     private void Awake()
     {
@@ -29,8 +32,13 @@ public class ds_EventManager : MonoBehaviour
     {
         _StartPlanningSection += DebugStartPlanning;
         _TriggerBeat += DebugBeat;
-
+        _endSong += EndSongDebug;
         _StartPlanningSection();
+    }
+
+    public void EndSongDebug()
+    {
+        Debug.Log("EndSong");
     }
 
     public void DebugStartPlanning()

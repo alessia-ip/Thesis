@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class ds_AudioManager : MonoBehaviour
 {
@@ -41,6 +42,15 @@ public class ds_AudioManager : MonoBehaviour
 
     public void PlayDanceMusic()
     {
+        var playtime = (ds_Service.TimingManagerInGame.currentBeatNumber) * ds_Service.TimingManagerInGame.secondsPerBeat;
+        if (playtime < 0)
+        {
+            playtime = 0;
+        }
+        songCalmAudioSource.time = playtime;
+        songExcitedAudioSource.time = playtime;
+        songAffectionateAudioSource.time = playtime;
+        
         songCalmAudioSource.Play();
         songExcitedAudioSource.Play();
         songAffectionateAudioSource.Play();
