@@ -13,6 +13,7 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
     public Tutorial_CurrentState CurrentState;
     public Tutorial_StepsCompleted StepsCompleted;
     public Tutorial_TestDanceMoves danceMoves;
+    public Tutorial_TestTiming TestTiming;
 
     private bool EmotionOne = false;
     private bool EmotionTwo = false;
@@ -72,6 +73,11 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
                 danceMoves.NumInputTwo = 0;
             }
         }
+
+        if (CurrentState.StateNumber == 4)
+        {
+            TestTiming.InputNewValue(0);
+        }
         
     }
     
@@ -100,6 +106,10 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
             }
         }
         
+        if (CurrentState.StateNumber == 4)
+        {
+            TestTiming.InputNewValue(1);
+        }
     }
     
     private void PassionateInput(InputAction.CallbackContext obj) //val 2
@@ -126,7 +136,11 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
                 danceMoves.NumInputTwo = 2;
             }
         }
-        
+     
+        if (CurrentState.StateNumber == 4)
+        {
+            TestTiming.InputNewValue(2);
+        }
     }
     
     private void EncouragingInput(InputAction.CallbackContext obj) //val 3
@@ -154,6 +168,11 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
             }
         }
         
+        if (CurrentState.StateNumber == 4)
+        {
+            TestTiming.InputNewValue(3);
+        }
+        
     }
 
     void Update()
@@ -166,6 +185,12 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
         if (danceMoves.BInputOne && danceMoves.BInputTwo)
         {
             StepsCompleted.triedACombo = true;
+        }
+
+        if (TestTiming.playerButtonInputs[0] != 10 &&
+            TestTiming.playerButtonInputs[1] != 10)
+        {
+            StepsCompleted.dancedInTime = true;
         }
     }
     
