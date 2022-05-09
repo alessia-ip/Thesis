@@ -24,6 +24,8 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
     public GameObject EmotionTwoO;
     public GameObject EmotionThreeO;
     public GameObject EmotionFourO;
+
+    public GameObject exit;
     
     // Start is called before the first frame update
     void Start()
@@ -191,6 +193,7 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
             TestTiming.playerButtonInputs[1] != 10)
         {
             StepsCompleted.dancedInTime = true;
+            exit.SetActive(true);
         }
     }
     

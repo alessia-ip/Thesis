@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TempEnding : MonoBehaviour
 {
@@ -13,8 +14,8 @@ public class TempEnding : MonoBehaviour
             {
                 var checkVibe = ds_Service.GameManagerInGame.sceneDanceInformation.vibe;
                 var checkEmotion = ds_Service.EmotionTrackerInGame.baseEmotion;
-                
-                
+
+                SceneManager.LoadScene(3);
             }
         }   
     }
