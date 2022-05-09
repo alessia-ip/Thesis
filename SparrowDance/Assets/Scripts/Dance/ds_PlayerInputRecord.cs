@@ -7,11 +7,16 @@ public class ds_PlayerInputRecord : MonoBehaviour
 {
     public int[] playerButtonInputs = new int[2];
 
+    private bool CanInputOne = false;
+    private bool CanInputTwo = false;
+    
     private void Start()
     {
         ds_Service.InputRecords = this;
         ds_Service.EventManagerInGame._TriggerBeat += ClearValues;
         ds_Service.EventManagerInGame._StartPlanningSection += ClearValues;
+        ds_Service.EventManagerInGame._TriggerBeat += AllowInputOne;
+        ds_Service.EventManagerInGame._TriggerBeat += AllowInputTwo;
         ClearValues();
     }
 
@@ -27,20 +32,55 @@ public class ds_PlayerInputRecord : MonoBehaviour
 
     }
 
+    void AllowInputOne()
+    {
+        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 1) return;
+        Invoke(nameof(StartInputOne), ds_Service.TimingManagerInGame.secondsPerBeat/2);
+    }
+    
+    
+    void StartInputOne()
+    {
+        CanInputOne = true;
+        Invoke(nameof(StopInputOne), ds_Service.TimingManagerInGame.secondsPerBeat);
+    }
+
+    void StopInputOne()
+    {
+        CanInputOne = false;
+    }
+    
+   
+    
+    void AllowInputTwo()
+    {
+        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber != 2) return;
+        Invoke(nameof(StartInputTwo), ds_Service.TimingManagerInGame.secondsPerBeat/2);
+    }
+    
+    void StartInputTwo()
+    {
+        CanInputTwo = true;
+        Invoke(nameof(StopInputTwo), ds_Service.TimingManagerInGame.secondsPerBeat);
+    }
+
+    void StopInputTwo()
+    {
+        CanInputTwo = false;
+    }
+
     public void InputNewValue(int InputVal)
     {
-        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber == 1 
-        || ds_Service.TimingManagerInGame.fourByFourBeatNumber == 4) return;
-
-        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber == 2)
+        if (ds_Service.TimingManagerInGame.fourByFourBeatNumber == 4) return;
+        
+        if (CanInputOne)
         {
             if (playerButtonInputs[0] == 10)
             {
                 playerButtonInputs[0] = InputVal;
                 ds_Service.DanceIndicatorUpdatorInLevel.updatePlayerIndicator(1, playerButtonInputs[0]);
             }
-        }
-        else
+        } else if (CanInputTwo && !CanInputOne)
         {
             if (playerButtonInputs[1] == 10)
             {
@@ -49,5 +89,9 @@ public class ds_PlayerInputRecord : MonoBehaviour
 
             }
         }
+        
     }
+    
+    
+    
 }

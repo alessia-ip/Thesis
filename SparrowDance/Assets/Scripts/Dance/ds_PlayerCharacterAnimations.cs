@@ -14,6 +14,7 @@ public class ds_PlayerCharacterAnimations : MonoBehaviour
     {
         ds_Service.PlayerCharacterAnimationsInGame = this;
         ds_Service.EventManagerInGame._TriggerBeat += triggerAnimations;
+        ds_Service.EventManagerInGame._endSong += ending;
     }
 
 
@@ -123,5 +124,11 @@ public class ds_PlayerCharacterAnimations : MonoBehaviour
                 anim.ResetTrigger(param.name);
             }
         }
+    }
+
+    private void ending()
+    {
+        npcAnimator.SetTrigger("Bow");
+        playerAnimator.SetTrigger("Bow");
     }
 }
