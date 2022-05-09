@@ -10,6 +10,9 @@ public class ds_AudioManager : MonoBehaviour
     public AudioSource songCalmAudioSource;
     public AudioSource songExcitedAudioSource;
     public AudioSource songAffectionateAudioSource;
+
+    public AudioSource layerOneAudio;
+    public AudioSource layerTwoAudio;
     
     public AudioSource countdownAudioSource;
     public AudioSource pauseAudioSource;
@@ -50,10 +53,15 @@ public class ds_AudioManager : MonoBehaviour
         songCalmAudioSource.time = playtime;
         songExcitedAudioSource.time = playtime;
         songAffectionateAudioSource.time = playtime;
+        layerOneAudio.time = playtime;
+        layerTwoAudio.time = playtime;
         
         songCalmAudioSource.Play();
         songExcitedAudioSource.Play();
         songAffectionateAudioSource.Play();
+        
+        layerOneAudio.Play();
+        layerTwoAudio.Play();
         AudioListener.pause = false;
     }
     
@@ -62,6 +70,9 @@ public class ds_AudioManager : MonoBehaviour
         songCalmAudioSource.Pause();
         songExcitedAudioSource.Pause();
         songAffectionateAudioSource.Pause();
+        
+        layerOneAudio.Pause();
+        layerTwoAudio.Pause();
         AudioListener.pause = true;
     }
 
@@ -86,19 +97,36 @@ public class ds_AudioManager : MonoBehaviour
                 songAffectionateAudioSource.volume = 1;
                 songExcitedAudioSource.volume = 0;
                 songCalmAudioSource.volume = 0;
-                return;
+                break;
             case MoodEnums.MoodTypes.excited:
                 songAffectionateAudioSource.volume = 0;
                 songExcitedAudioSource.volume = 1;
                 songCalmAudioSource.volume = 0;
-                return;
+                break;
             case MoodEnums.MoodTypes.content:
                 songAffectionateAudioSource.volume = 0;
                 songExcitedAudioSource.volume = 0;
                 songCalmAudioSource.volume = 1;
-                return;
+                break;
         }
 
+        if (ds_Service.VibeMoveCloserInGame.thresholdOneCrossed)
+        {
+            layerOneAudio.volume = 0.3f;
+        }
+        else
+        {
+            layerOneAudio.volume = 0;
+        }
+        
+        if (ds_Service.VibeMoveCloserInGame.thresholdTwoCrossed)
+        {
+            layerTwoAudio.volume = 0.3f;
+        }
+        else
+        {
+            layerTwoAudio.volume = 0;
+        }
         
     }
 

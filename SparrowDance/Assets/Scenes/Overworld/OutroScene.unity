@@ -175,6 +175,7 @@ MonoBehaviour:
   movementController: {fileID: 1673161608}
   playerAnims: {fileID: 7428754394053000999}
   npcAnims: {fileID: 74820761413846904}
+  isOutro: 1
 --- !u!1 &37878967
 GameObject:
   m_ObjectHideFlags: 0
@@ -4277,7 +4278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1002427306
 RectTransform:
   m_ObjectHideFlags: 0

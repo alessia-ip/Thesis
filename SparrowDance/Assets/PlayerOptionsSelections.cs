@@ -21,6 +21,8 @@ public class PlayerOptionsSelections : MonoBehaviour
     public Animator playerAnims;
     public Animator npcAnims;
 
+    public bool isOutro = false;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +69,7 @@ public class PlayerOptionsSelections : MonoBehaviour
     {
         if (thinking) return;
         if (!ableToSelectOptions) return;
+        if (isOutro) return;
         movementController.enabled = false;
         Invoke(nameof(playerBow), 0.01f);
     }
