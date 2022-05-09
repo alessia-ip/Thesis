@@ -75,6 +75,7 @@ public class SplitscreenManager : MonoBehaviour
 
         var playerAction = ds_Service.InputRecords.playerButtonInputs[0];
         
+        
         switch (playerAction)
         {
             case 0:

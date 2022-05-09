@@ -6,12 +6,18 @@ using UnityEngine.UI;
 public class NPCThoughtBubbleColorPicker : MonoBehaviour
 {
 
-    public Color ExcitedColor;
+    /*public Color ExcitedColor;
     public Color ContentColor;
     public Color AffectionateColor;
 
-    public GameObject NpcThoughtBubble;
-    
+    public GameObject NpcThoughtBubble;*/
+
+    public GameObject thoughtIcon;
+
+    public Sprite excitedS;
+    public Sprite passionateS;
+    public Sprite calmS;
+
     private ds_CurrentNpcEmotion emotion;
     
     // Start is called before the first frame update
@@ -26,16 +32,15 @@ public class NPCThoughtBubbleColorPicker : MonoBehaviour
         switch (emotion.behaviorEmotion)
         {
             case MoodEnums.MoodTypes.affectionate:
-                NpcThoughtBubble.GetComponent<Image>().color = AffectionateColor;
+                thoughtIcon.GetComponent<Image>().sprite = passionateS;
                 break;
             case MoodEnums.MoodTypes.content:
-                NpcThoughtBubble.GetComponent<Image>().color = ContentColor;
+                thoughtIcon.GetComponent<Image>().sprite = calmS;
                 break;
             case MoodEnums.MoodTypes.excited:
-                NpcThoughtBubble.GetComponent<Image>().color = ExcitedColor;
+                thoughtIcon.GetComponent<Image>().sprite = excitedS;
                 break;
             default:
-                NpcThoughtBubble.GetComponent<Image>().color = Color.white;
                 break;
         }
     }
