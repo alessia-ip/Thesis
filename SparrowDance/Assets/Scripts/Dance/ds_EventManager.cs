@@ -39,6 +39,7 @@ public class ds_EventManager : MonoBehaviour
     public void EndSongDebug()
     {
         Debug.Log("EndSong");
+        ds_Service.GameManagerInGame.currentGameState = ds_GameManager.GameState.end;
     }
 
     public void DebugStartPlanning()

@@ -36,8 +36,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6ada912c42c0d42a5b68ad415c513ffa, type: 2}
   vibe: 0
   excitement: 10
-  contentment: 0
-  affection: 0
+  contentment: 2
+  affection: 2
   surprise: 0
   nervousness: 10
   frustration: 0

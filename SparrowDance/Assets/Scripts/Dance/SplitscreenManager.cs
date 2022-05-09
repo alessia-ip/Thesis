@@ -24,6 +24,7 @@ public class SplitscreenManager : MonoBehaviour
         ds_Service.EventManagerInGame._TriggerBeat += turnSplitscreenOn;
         ds_Service.EventManagerInGame._TriggerBeat += turnSplitscreenOff;
         ds_Service.EventManagerInGame._StartPlanningSection += turnSplitscreenOffv2;
+        ds_Service.EventManagerInGame._endSong += turnSplitscreenOffv2;
         ds_Service.EventManagerInGame._TriggerBeat += updateCameraBackgroundColor;
     }
 
