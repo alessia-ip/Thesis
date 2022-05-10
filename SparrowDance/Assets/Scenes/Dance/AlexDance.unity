@@ -6044,6 +6044,7 @@ MonoBehaviour:
   playerAnimator: {fileID: 562269605}
   npcAnimator: {fileID: 7199024660630761106}
   missAction: {fileID: 11400000, guid: d2a1efdb85fd146e4ac5435945c4272a, type: 2}
+  playerMov: {fileID: 2117067615}
 --- !u!1 &191532042
 GameObject:
   m_ObjectHideFlags: 0
