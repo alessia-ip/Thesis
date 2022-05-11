@@ -88,7 +88,7 @@ public class PlayerOptionsSelections : MonoBehaviour
 
     void LoadScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
     
 }

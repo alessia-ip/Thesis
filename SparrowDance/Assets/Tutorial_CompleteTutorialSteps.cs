@@ -45,7 +45,7 @@ public class Tutorial_CompleteTutorialSteps : MonoBehaviour
                 StepsCompleted.triedACombo &&
                 StepsCompleted.dancedInTime)
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
             }
         }
     }
