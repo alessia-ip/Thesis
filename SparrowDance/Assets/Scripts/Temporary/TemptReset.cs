@@ -1,21 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class TemptReset : MonoBehaviour
 {
 
     public DanceInfo danceInfoReset;
-    
+    public PlayerInput playerInputs;
+
+    void Start()
+    {
+        playerInputs.actions["Reset"].performed += ResetGame;
+    }
     
     // Update is called once per frame
-    void Update()
+    void ResetGame(InputAction.CallbackContext obj)
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            SceneManager.LoadScene(0);
-            danceInfoReset.vibe = 0;
-        }       
+        Debug.Log("Reset");
+        danceInfoReset.vibe = 0;
+        danceInfoReset.affection = 10;
+        danceInfoReset.contentment = 5;
+        danceInfoReset.excitement = 15;
+        SceneManager.LoadScene(0);
+        
     }
 }

@@ -5310,6 +5310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   danceInfoReset: {fileID: 11400000, guid: ec41f007d1eb7417a98a57b20bdd9f1b, type: 2}
+  playerInputs: {fileID: 952968679}
 --- !u!4 &87205128
 Transform:
   m_ObjectHideFlags: 0
