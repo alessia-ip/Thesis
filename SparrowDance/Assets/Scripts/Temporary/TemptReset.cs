@@ -13,6 +13,8 @@ public class TemptReset : MonoBehaviour
     void Start()
     {
         playerInputs.actions["Reset"].performed += ResetGame;
+        playerInputs.actions["Reset1"].performed += ResetGame;
+        playerInputs.actions["Reset2"].performed += ResetGame;
     }
     
     // Update is called once per frame
